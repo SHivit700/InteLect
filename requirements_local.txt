@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+firebase-admin
+yt-dlp
+mlx-whisper
+anthropic
+requests
+torch
+torchaudio
+python-multipart

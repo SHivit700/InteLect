@@ -1,0 +1,3129 @@
+[
+    {
+        "segment_number": 1,
+        "segment_title": "Introduction to Deep Learning",
+        "segment_start_timestamp": 0.0,
+        "segment_end_timestamp": 400.76,
+        "transcript": [
+            {
+                "start_timestamp": 0.0,
+                "end_timestamp": 8.6,
+                "text": "So hello everybody, this is the first content lecture in deep learning and we'll talk about the background of deep learning and why do we need deep learning at all in this lecture?"
+            },
+            {
+                "start_timestamp": 9.36,
+                "end_timestamp": 18.4,
+                "text": "Now why is deep learning such a hot topic right now and really I think most of you are actually here because you heard that deep learning is this thing to do now?"
+            },
+            {
+                "start_timestamp": 18.4,
+                "end_timestamp": 22.76,
+                "text": "Why is this? Well at its core the promise really of deep learning is"
+            },
+            {
+                "start_timestamp": 22.76,
+                "end_timestamp": 36.36,
+                "text": "is quite simple collect enough data, label it and voila you get what seems to be like a magic black box, predict the capable of well quite astonishing tasks very often that kind of human level performance levels."
+            },
+            {
+                "start_timestamp": 36.36,
+                "end_timestamp": 50.56,
+                "text": "But let's add a caveat my this mainly holds true in supervised learning right now and this is crucial to understand that where deep learning and big data converges the big money basically follows."
+            },
+            {
+                "start_timestamp": 50.56,
+                "end_timestamp": 65.16,
+                "text": "So this has basically made the field not only highly competitive but also unfortunately sometimes very stressful especially for us and you people working in this environment and sometimes even quite toxic when it comes to be who was first doing certain things."
+            },
+            {
+                "start_timestamp": 65.16,
+                "end_timestamp": 76.56,
+                "text": "But the story really doesn't end there deep learning isn't just roses and rainbows it has also sometimes the outside technologies like where you have probably all heard of them deep fakes and"
+            },
+            {
+                "start_timestamp": 76.56,
+                "end_timestamp": 87.16,
+                "text": "potential for adversarial attacks to change data and outcomes to influence decision making basically they pose serious ethical and security concern right now."
+            },
+            {
+                "start_timestamp": 87.16,
+                "end_timestamp": 102.75999999999999,
+                "text": "So as we marvel at the capabilities of deep learning it's also crucial to keep in mind this is quite a complex topic it is sometimes difficult to understand sometimes it looks like just an engineering effort that's quite straightforward."
+            },
+            {
+                "start_timestamp": 102.75999999999999,
+                "end_timestamp": 108.75999999999999,
+                "text": "But keep in mind all of these complexities that also go way beyond the engineering that is involved."
+            },
+            {
+                "start_timestamp": 108.75999999999999,
+                "end_timestamp": 130.76,
+                "text": "Now the fundamental architecture of deep learning systems or learning systems in general comprise these three components first there is usually some sort of feature extractor you want to identify patterns in the data to inform further bounce dream tasks in this context for example an image analysis is often becomes a convenient convolution neural network."
+            },
+            {
+                "start_timestamp": 130.76,
+                "end_timestamp": 140.76,
+                "text": "And this is this part how to extract features this is really what deep learning is about and this is what we will discuss most in the coming to us real lectures."
+            },
+            {
+                "start_timestamp": 140.76,
+                "end_timestamp": 149.76,
+                "text": "The feature extractor here is just responsible for capturing hierarchical patterns in the data like edges textures or more complex shapes of feature feature combinations."
+            },
+            {
+                "start_timestamp": 149.76,
+                "end_timestamp": 154.76,
+                "text": "This is really what allows the network to understand what what it's looking at."
+            },
+            {
+                "start_timestamp": 154.76,
+                "end_timestamp": 163.76,
+                "text": "And usually the feature extractor is followed by some bottleneck or task specific hats something that does for example prediction a classification."
+            },
+            {
+                "start_timestamp": 163.76,
+                "end_timestamp": 169.76,
+                "text": "And this component is tailored to the problem that we are usually trying to solve."
+            },
+            {
+                "start_timestamp": 169.76,
+                "end_timestamp": 183.76,
+                "text": "It doesn't really matter what the problem is if you want to classify cats or dogs or extract language the only difference I would probably make is either if you project data down to a single value doing some classification regression tasks."
+            },
+            {
+                "start_timestamp": 183.76,
+                "end_timestamp": 189.76,
+                "text": "Or if you try to generate or order in code your input with these setups."
+            },
+            {
+                "start_timestamp": 189.76,
+                "end_timestamp": 192.76,
+                "text": "Well, there are also components around these setups."
+            },
+            {
+                "start_timestamp": 192.76,
+                "end_timestamp": 210.76,
+                "text": "There is parameter optimization of course this is also where some of the magic happens how to best optimize algorithms like with algorithms like for example has the gradient descent and find tuning how the overall model looks like how many how much data do you put in to really learn something how do you just the learning rates."
+            },
+            {
+                "start_timestamp": 210.76,
+                "end_timestamp": 219.76,
+                "text": "This is also some some of the skills we need to learn to see how these hyper parameters can be achieved."
+            },
+            {
+                "start_timestamp": 219.76,
+                "end_timestamp": 228.76,
+                "text": "Now there are lots and lots of success stories you have probably all heard of them I would recommend you to have a look around on the Internet."
+            },
+            {
+                "start_timestamp": 228.76,
+                "end_timestamp": 236.76,
+                "text": "I've collected just a few interesting videos probably some of them can be considered historical by now but."
+            },
+            {
+                "start_timestamp": 236.76,
+                "end_timestamp": 265.76,
+                "text": "But all of them are reasonably interesting I think in this context where deep learning really played a role that led to a breakthrough and power time shift in these fields and you probably all remember the hotdog detector in the famous TV series Silicon Valley and this probably brings some of the peculiarities of the early times of deep learning on the tableware everybody probably thought this is some sort of magic and can do a lot but if you remember that hotdog detector was only able to."
+            },
+            {
+                "start_timestamp": 265.76,
+                "end_timestamp": 273.76,
+                "text": "To detect that it's a hotdog or no hotdog but it was sold as a general sort of food detector or I don't know."
+            },
+            {
+                "start_timestamp": 273.76,
+                "end_timestamp": 292.76,
+                "text": "Now the big question is why are you actually here you had already program machine learning classes statistics classes where you learned about neural networks and and how neurons can be designed to build a universal approximator that should actually be able to do all of these tasks maybe only with one hidden layer."
+            },
+            {
+                "start_timestamp": 292.76,
+                "end_timestamp": 312.76,
+                "text": "But the point is traditional networks were where for the time ground breaking for many applications but really when it came to image and text analysis really high dimensional data they had their role backs one of the primary issues is specifically dealing with the sheer complexity and dimensionality and size of say image data."
+            },
+            {
+                "start_timestamp": 312.76,
+                "end_timestamp": 326.76,
+                "text": "We're really talking about huge pixel grids large images our smartphones do probably millions of pixels up to giga pixel images which can be overwhelming for a little neural networks."
+            },
+            {
+                "start_timestamp": 326.76,
+                "end_timestamp": 339.76,
+                "text": "Let's probably consider for a moment the way humans interpret images we know quite a lot about the human visual system and we naturally recognize hierarchies and patterns and there are stages actually in the human visual systems that go from."
+            },
+            {
+                "start_timestamp": 339.76,
+                "end_timestamp": 343.76,
+                "text": "Large scale patterns down to kind of more."
+            },
+            {
+                "start_timestamp": 343.76,
+                "end_timestamp": 357.76,
+                "text": "Intricative tasks traditional neural networks well they have a day they don't have an innate understanding of spatial hierarchies of hierarchies at all that are presented in these sort of complex data like images."
+            },
+            {
+                "start_timestamp": 357.76,
+                "end_timestamp": 376.76,
+                "text": "Another critical challenge is really translation invariance for instance if a traditional network where you basically take the image line it up in a long vector and put that through your network yeah if if a traditional network is trained to recognize for example a cat in the bottom left corner of an image it may not easily recognize that the same cat."
+            },
+            {
+                "start_timestamp": 376.76,
+                "end_timestamp": 399.76,
+                "text": "The same cat if it appears somewhere in say the top right corner simply because you do not preserve spatial consistency in this long vectorizations of your input data in essence traditional networks they lack the flexibility to really adopt to objects appearing in different locations maybe magical times here and there and they they don't have a sense for hierarchies."
+            },
+            {
+                "start_timestamp": 400.76,
+                "end_timestamp": 415.76,
+                "text": "And well in traditional networks say if you have one hidden layer then overfitting really becomes a significant concern for especially with image data the risk amplifies because simply because of the high number of parameters all of these many many connections in your traditional network."
+            }
+        ]
+    },
+    {
+        "segment_number": 2,
+        "segment_title": "Limitations of Traditional Neural Networks",
+        "segment_start_timestamp": 400.76,
+        "segment_end_timestamp": 708.76,
+        "transcript": [
+            {
+                "start_timestamp": 400.76,
+                "end_timestamp": 415.76,
+                "text": "And well in traditional networks say if you have one hidden layer then overfitting really becomes a significant concern for especially with image data the risk amplifies because simply because of the high number of parameters all of these many many connections in your traditional network."
+            },
+            {
+                "start_timestamp": 415.76,
+                "end_timestamp": 439.76,
+                "text": "So that are involved in these images and and these challenges really led to the rise of of convolution neural networks where hierarchies and spatial priors and so on are introduced and they were designed specifically to address these limitations also with for example image data in mind where locality translation invariance and some the player big factor."
+            },
+            {
+                "start_timestamp": 439.76,
+                "end_timestamp": 468.76,
+                "text": "Let's also try to understand this a little bit more because the mathematical underpinning of neural networks is really known as the universal approximation theorem that theorem just states that if you have say a function to this phi to be a non constant bounded and monotonically increasing function what this means is that phi is a sensible activation function like for example used in neural network in CNN's like the railroad which we're introducing a bit."
+            },
+            {
+                "start_timestamp": 468.76,
+                "end_timestamp": 491.76,
+                "text": "So if you think about the universal approximation zero and have a function that can protect data in a non linear way but but bounded and monotonically increasing then for a positive error and any continuous function defined on a compact subset then the theorem actually issues us that we can approximate this function to within an error epsilon."
+            },
+            {
+                "start_timestamp": 492.76,
+                "end_timestamp": 516.76,
+                "text": "What this means really is that the theorem tells us that we've just one hidden layer so one non linear monotonically increasing bounded protection function we can approximate any function any any function that functions if you have just one hidden layer everything is connected to everything we can approximate every function there is."
+            },
+            {
+                "start_timestamp": 516.76,
+                "end_timestamp": 526.76,
+                "text": "And that's a quite big claim and well of course there are some practical challenges it we can approximate this function within a certain error bound yeah the epsilon error."
+            },
+            {
+                "start_timestamp": 526.76,
+                "end_timestamp": 540.76,
+                "text": "And in practice of course this epsilon can be very large making the approximation probably less useful sometimes probably even falling back to something more linear which I could have done without introducing billions and billions of parameters."
+            },
+            {
+                "start_timestamp": 541.76,
+                "end_timestamp": 565.76,
+                "text": "And second problem that we encounter is what's known as the curse of dimensionality where the computational and spatial complexity really exponentially increases with the number of dimensions you feed in the bigger that hidden layers the bigger your input the more of these connections you have the more you run into the problem of the curse of dimensionality which is something we'll discuss just in the next slide in more detail."
+            },
+            {
+                "start_timestamp": 565.76,
+                "end_timestamp": 593.76,
+                "text": "So to take these issues the typical solution is to break up the problem into many many smaller problems which is essentially what multiple layers can do in deeper neural networks and this hierarchical decomposition really allows us to learn complex more complex functions in an easier way each of these sub layers now approximate only a part of the function extracts certain features for example and solves a small sub problem of the entire big problem."
+            },
+            {
+                "start_timestamp": 595.76,
+                "end_timestamp": 623.76,
+                "text": "So what is this curse of dimensionality well a cornerstone a cornerstone really understanding the challenges of machine learning is this course of dimensionality so let's just start acknowledging the determine self sounds very dramatic right but it kind of complex conveys the complications that that really arise when you deal with high dimensional data and if I say high dimensional data I really mean anything beyond 10 more dimensions."
+            },
+            {
+                "start_timestamp": 623.76,
+                "end_timestamp": 651.76,
+                "text": "So there is I have posted the link here on the slide there are some very nice discussions on stack exchange for example about what the mathematical properties are I would recommend you to look into those and and also what you see on this slide here is some of these slides have exclamation mark and they give you a hint that this is relevant for for the exam and that you should probably revise more carefully over those then some are more for illustration purposes where I have omitted this."
+            },
+            {
+                "start_timestamp": 653.76,
+                "end_timestamp": 663.76,
+                "text": "So let's look at the first one of the questions about the question mark. But for a complete picture please look at all of the slides and I hope to also give you a kind of nice round up through these videos."
+            },
+            {
+                "start_timestamp": 664.76,
+                "end_timestamp": 680.76,
+                "text": "So let's let's talk about the curse of dimensionality so first you have that function approximation thing so what can this be imagine you have a function say let's call it F that maps data from some sort of the dimensional space to one real number."
+            },
+            {
+                "start_timestamp": 680.76,
+                "end_timestamp": 690.76,
+                "text": "Now your aim is to really approximate this function with a specific level of accuracy which we usually denote denote as as epsilon."
+            },
+            {
+                "start_timestamp": 691.76,
+                "end_timestamp": 707.76,
+                "text": "And this epsilon really brings us to the concept of sample explosion now to do this approximation the number of samples required to achieve this level of accuracy epsilon really grows exponentially with the number of dimensions I have in each sample with the."
+            },
+            {
+                "start_timestamp": 707.76,
+                "end_timestamp": 723.76,
+                "text": "So mathematically this is expressed as the number of samples you need to approximate a liqueous continuous function to sufficient to even accuracy epsilon is in the order the order of epsilon expected error to the power of minus D."
+            }
+        ]
+    },
+    {
+        "segment_number": 3,
+        "segment_title": "The Curse of Dimensionality",
+        "segment_start_timestamp": 708.76,
+        "segment_end_timestamp": 1172.76,
+        "transcript": [
+            {
+                "start_timestamp": 724.76,
+                "end_timestamp": 730.76,
+                "text": "So if I want an error of 0.1 then I have 0.1 to the power of how many dimensions you have in your input samples."
+            },
+            {
+                "start_timestamp": 731.76,
+                "end_timestamp": 747.76,
+                "text": "So let's consider for a moment of one dimensional space perhaps you're trying to approximate a line if you if you need 10 samples for epsilon level accuracy in one day you'll need 100 samples into the right we have now epsilon to the minus two."
+            },
+            {
+                "start_timestamp": 748.76,
+                "end_timestamp": 756.76,
+                "text": "And potentially 1000 in 3D the sample requirement really explodes as dimensions increase and this was now just an example approximating a single line."
+            },
+            {
+                "start_timestamp": 757.76,
+                "end_timestamp": 761.76,
+                "text": "And this really this example explosion makes the task super computationally burdensome."
+            },
+            {
+                "start_timestamp": 762.76,
+                "end_timestamp": 767.76,
+                "text": "So why should we actually care in reality we probably don't have that many samples."
+            },
+            {
+                "start_timestamp": 768.76,
+                "end_timestamp": 773.76,
+                "text": "Well this exponential growth in required samples really poses a challenge."
+            },
+            {
+                "start_timestamp": 774.76,
+                "end_timestamp": 782.76,
+                "text": "And training models on high dimensional data if you just have input vector for five or so on then you can directly approximate your function steps general statistics."
+            },
+            {
+                "start_timestamp": 783.76,
+                "end_timestamp": 791.76,
+                "text": "But if you put in an image and you've probably 36 million input pixels and then your data is really high dimensional so the more features."
+            },
+            {
+                "start_timestamp": 792.76,
+                "end_timestamp": 805.76,
+                "text": "So more dimensions really mean more features and without enough samples models cannot overfit or fail to recognize really underlying patterns that make your function approximation general."
+            },
+            {
+                "start_timestamp": 805.76,
+                "end_timestamp": 808.76,
+                "text": "So that it also works with new data and not only your training data."
+            },
+            {
+                "start_timestamp": 809.76,
+                "end_timestamp": 820.76,
+                "text": "It's really summary the curse and the curse of dimension that you refers to at least computational data specific challenges that we encounter when we."
+            },
+            {
+                "start_timestamp": 821.76,
+                "end_timestamp": 823.76,
+                "text": "Look at really high dimensional data like images."
+            },
+            {
+                "start_timestamp": 824.76,
+                "end_timestamp": 834.76,
+                "text": "The curse of dimensionality is sort of difficult to understand to comprehend and to develop intuition for it because our human brain usually ends at three dimensions in a Euclidean space."
+            },
+            {
+                "start_timestamp": 834.76,
+                "end_timestamp": 837.76,
+                "text": "Maybe you can at time to have it intuitive to some degree."
+            },
+            {
+                "start_timestamp": 838.76,
+                "end_timestamp": 840.76,
+                "text": "But I you cannot tell me that you understand the 10 dimensional space."
+            },
+            {
+                "start_timestamp": 841.76,
+                "end_timestamp": 843.76,
+                "text": "Now what you really has good intuition about it."
+            },
+            {
+                "start_timestamp": 843.76,
+                "end_timestamp": 850.76,
+                "text": "So let's probably look into another few examples and let's talk about pizzas and watermelons."
+            },
+            {
+                "start_timestamp": 851.76,
+                "end_timestamp": 853.76,
+                "text": "So let's let's start with a pizza analogy."
+            },
+            {
+                "start_timestamp": 854.76,
+                "end_timestamp": 858.76,
+                "text": "It said that more than half of a pizza lies near its edge."
+            },
+            {
+                "start_timestamp": 861.76,
+                "end_timestamp": 863.76,
+                "text": "So outside of this shaded area here."
+            },
+            {
+                "start_timestamp": 864.76,
+                "end_timestamp": 870.76,
+                "text": "Interestingly, the width of this crust is only 18% of the diameter of the pizza."
+            },
+            {
+                "start_timestamp": 870.76,
+                "end_timestamp": 874.76,
+                "text": "It seems a bit weird half of your pizza isn't the crust."
+            },
+            {
+                "start_timestamp": 874.76,
+                "end_timestamp": 878.76,
+                "text": "But only if you measure diameter only 18% is the crust."
+            },
+            {
+                "start_timestamp": 879.76,
+                "end_timestamp": 881.76,
+                "text": "Now consider a thick skin fruit like a watermelon."
+            },
+            {
+                "start_timestamp": 881.76,
+                "end_timestamp": 883.76,
+                "text": "Such fruits the maturity of the volume."
+            },
+            {
+                "start_timestamp": 883.76,
+                "end_timestamp": 885.76,
+                "text": "This is not three dimensional objects."
+            },
+            {
+                "start_timestamp": 885.76,
+                "end_timestamp": 887.76,
+                "text": "The maturity of the volume is actually in the skin."
+            },
+            {
+                "start_timestamp": 888.76,
+                "end_timestamp": 890.76,
+                "text": "Not the juicy part inside."
+            },
+            {
+                "start_timestamp": 891.76,
+                "end_timestamp": 892.76,
+                "text": "So what's the relevance?"
+            },
+            {
+                "start_timestamp": 892.76,
+                "end_timestamp": 896.76,
+                "text": "Both examples illustrate really counterintuitive geometric principle."
+            },
+            {
+                "start_timestamp": 897.76,
+                "end_timestamp": 903.76,
+                "text": "In higher dimensions, the maturity of the mass of volume of an object can reside near its boundaries."
+            },
+            {
+                "start_timestamp": 905.76,
+                "end_timestamp": 906.76,
+                "text": "So how do we generalize this?"
+            },
+            {
+                "start_timestamp": 907.76,
+                "end_timestamp": 917.76,
+                "text": "We can really model various objects like the board of a map, the crust of a pizza or the skin of a fruit by supposing that their basic shapes have been uniformly shrunk by some factor."
+            },
+            {
+                "start_timestamp": 918.76,
+                "end_timestamp": 919.76,
+                "text": "Let's call it out."
+            },
+            {
+                "start_timestamp": 919.76,
+                "end_timestamp": 922.76,
+                "text": "Let's shrink that whole thing like the pizza the melon by some factor alpha."
+            },
+            {
+                "start_timestamp": 923.76,
+                "end_timestamp": 928.76,
+                "text": "The crust or rain is essentially what lies between these two similar shapes."
+            },
+            {
+                "start_timestamp": 928.76,
+                "end_timestamp": 932.76,
+                "text": "We go a little bit smaller, everything is between these two shapes."
+            },
+            {
+                "start_timestamp": 933.76,
+                "end_timestamp": 939.76,
+                "text": "So in higher dimensions, spaces like those we often encounter in deep learning, this geometric inside has really consequences."
+            },
+            {
+                "start_timestamp": 939.76,
+                "end_timestamp": 948.76,
+                "text": "For example, when we are working with high-dimensional data, most of our training samples, they lie actually close to the edge of that space."
+            },
+            {
+                "start_timestamp": 948.76,
+                "end_timestamp": 949.76,
+                "text": "Most of them."
+            },
+            {
+                "start_timestamp": 950.76,
+                "end_timestamp": 965.76,
+                "text": "This phenomenon has implications for things like clustering, outlet detection and the training, really training of neural networks because we don't really use the space, the volume in that space, but have everything, all of the information at the boundaries of these high-dimensional spaces."
+            },
+            {
+                "start_timestamp": 972.76,
+                "end_timestamp": 973.76,
+                "text": "Let's write this down."
+            },
+            {
+                "start_timestamp": 974.76,
+                "end_timestamp": 983.76,
+                "text": "So if we unpack the surprising behavior to exhibit, particular with regards to volume, this is something that might help us with some intuition."
+            },
+            {
+                "start_timestamp": 984.76,
+                "end_timestamp": 986.76,
+                "text": "So first, how do high-dimensional volumes look like?"
+            },
+            {
+                "start_timestamp": 986.76,
+                "end_timestamp": 990.76,
+                "text": "We begin by understanding, say, volumes in an end-dimensional space."
+            },
+            {
+                "start_timestamp": 990.76,
+                "end_timestamp": 1000.76,
+                "text": "When we scale a shrinking object like before, and just look at what's at its boundary, with a factor alpha, if we shrink and scale it with alpha, it's volume,"
+            },
+            {
+                "start_timestamp": 1000.76,
+                "end_timestamp": 1006.76,
+                "text": "will it becomes a factor of A to the power of N times the volume of the original shape?"
+            },
+            {
+                "start_timestamp": 1006.76,
+                "end_timestamp": 1007.76,
+                "text": "Okay?"
+            },
+            {
+                "start_timestamp": 1007.76,
+                "end_timestamp": 1012.76,
+                "text": "So this is straightforward enough, but as we'll see, the implications are quite profound."
+            },
+            {
+                "start_timestamp": 1012.76,
+                "end_timestamp": 1018.76,
+                "text": "Let's think about the concept of a rind, or a scheme of that space."
+            },
+            {
+                "start_timestamp": 1019.76,
+                "end_timestamp": 1031.76,
+                "text": "So if we visualize the rind as the boundary of the shell that surrounds our object or our space, to determine the volume of this rind, we just subtract the volume of the shrinking object from its original."
+            },
+            {
+                "start_timestamp": 1031.76,
+                "end_timestamp": 1032.76,
+                "text": "Right?"
+            },
+            {
+                "start_timestamp": 1032.76,
+                "end_timestamp": 1035.76,
+                "text": "Say, 1 minus A to the power of N."
+            },
+            {
+                "start_timestamp": 1035.76,
+                "end_timestamp": 1042.76,
+                "text": "The rind represents really not the difference between the original and the shrinking volume in behaves rather unexpectedly in high-dimensional spaces."
+            },
+            {
+                "start_timestamp": 1042.76,
+                "end_timestamp": 1046.76,
+                "text": "Let's see, let's look at the rind's growth rate, if we increase dimensions."
+            },
+            {
+                "start_timestamp": 1046.76,
+                "end_timestamp": 1051.76,
+                "text": "So we can determine how the volume of this rind grows as we adjust the shrinking factor."
+            },
+            {
+                "start_timestamp": 1051.76,
+                "end_timestamp": 1065.76,
+                "text": "Mathematically, this growth rate is defined by here d times, number of dimensions times 1 minus alpha to power of N, and this is approximately, this is equal to minus N times alpha to power of N minus 1, dA."
+            },
+            {
+                "start_timestamp": 1065.76,
+                "end_timestamp": 1074.76,
+                "text": "So this is my growth rate, if I change the factor alpha when I shrink my water medium, for example."
+            },
+            {
+                "start_timestamp": 1074.76,
+                "end_timestamp": 1077.76,
+                "text": "So, but the change here, here it gets really interesting."
+            },
+            {
+                "start_timestamp": 1077.76,
+                "end_timestamp": 1088.76,
+                "text": "When we start with no shrinking, that is alpha equals 1, and gradually begin to decrease alpha to rind volume grows at an initial rate of N times."
+            },
+            {
+                "start_timestamp": 1088.76,
+                "end_timestamp": 1093.76,
+                "text": "Right? That rind's volume grows at an initial rate of N times."
+            },
+            {
+                "start_timestamp": 1093.76,
+                "end_timestamp": 1102.76,
+                "text": "So this essentially means the rind's volume surges N times faster than the rate at which we are shrinking the object."
+            },
+            {
+                "start_timestamp": 1102.76,
+                "end_timestamp": 1107.76,
+                "text": "This behavior is a bit counterintuitive, but really important to understand what's happening here."
+            },
+            {
+                "start_timestamp": 1107.76,
+                "end_timestamp": 1114.76,
+                "text": "So if we shrink just a little bit, the volume gets N times faster bigger."
+            },
+            {
+                "start_timestamp": 1114.76,
+                "end_timestamp": 1121.76,
+                "text": "So in high-dimensional, even the new changes in distance can have magnified effects on volumes."
+            },
+            {
+                "start_timestamp": 1121.76,
+                "end_timestamp": 1128.76,
+                "text": "A tiny change in one dimension can lead to a substantially larger change in the volume of that space."
+            },
+            {
+                "start_timestamp": 1128.76,
+                "end_timestamp": 1137.76,
+                "text": "So as an example, in 2, 0, 3D spaces, which you're familiar with, the interior volume is alpha to power of N times the original volume."
+            },
+            {
+                "start_timestamp": 1137.76,
+                "end_timestamp": 1141.76,
+                "text": "Yeah, alpha to the N times the original volume."
+            },
+            {
+                "start_timestamp": 1141.76,
+                "end_timestamp": 1145.76,
+                "text": "This is the interior volume."
+            },
+            {
+                "start_timestamp": 1145.76,
+                "end_timestamp": 1148.76,
+                "text": "So that's change."
+            },
+            {
+                "start_timestamp": 1148.76,
+                "end_timestamp": 1155.76,
+                "text": "Yeah? In higher dimensions, a really, really small change in distance can lead to large changes in volume."
+            },
+            {
+                "start_timestamp": 1155.76,
+                "end_timestamp": 1164.76,
+                "text": "So for machine learning, this has massive implications on data distributions, sampling and generalization."
+            },
+            {
+                "start_timestamp": 1164.76,
+                "end_timestamp": 1172.76,
+                "text": "It's still not probably 100% clear. So let's dive into something more related to our pizza."
+            },
+            {
+                "start_timestamp": 1172.76,
+                "end_timestamp": 1178.76,
+                "text": "Let's ask the question, how the salami behave on a high-dimensional pizza."
+            }
+        ]
+    },
+    {
+        "segment_number": 4,
+        "segment_title": "Shift Invariance and Equivariance",
+        "segment_start_timestamp": 1172.76,
+        "segment_end_timestamp": 2106.76,
+        "transcript": [
+            {
+                "start_timestamp": 1172.76,
+                "end_timestamp": 1178.76,
+                "text": "Let's ask the question, how the salami behave on a high-dimensional pizza."
+            },
+            {
+                "start_timestamp": 1178.76,
+                "end_timestamp": 1182.76,
+                "text": "I want to have as much salami as possible on the pizzas I get."
+            },
+            {
+                "start_timestamp": 1182.76,
+                "end_timestamp": 1186.76,
+                "text": "So I'll ask the question, how does it actually behave on a high-dimensional pizza?"
+            },
+            {
+                "start_timestamp": 1186.76,
+                "end_timestamp": 1193.76,
+                "text": "Well, it may sound like we're talking about dinner plans. This is actually a great way to understand how data also behaves in high-dimensions."
+            },
+            {
+                "start_timestamp": 1193.76,
+                "end_timestamp": 1195.76,
+                "text": "The concept is really crucial here."
+            },
+            {
+                "start_timestamp": 1195.76,
+                "end_timestamp": 1199.76,
+                "text": "So imagine a pizza, where the salami is uniformly spread out."
+            },
+            {
+                "start_timestamp": 1199.76,
+                "end_timestamp": 1203.76,
+                "text": "Should you rather eat the inside or should you rather eat the crust?"
+            },
+            {
+                "start_timestamp": 1203.76,
+                "end_timestamp": 1210.76,
+                "text": "We want to really figure out how much of this salami is close to the boundary of the pizza in such a high-dimensional space."
+            },
+            {
+                "start_timestamp": 1210.76,
+                "end_timestamp": 1214.76,
+                "text": "Let's think about that briefly in the concept of half-links."
+            },
+            {
+                "start_timestamp": 1214.76,
+                "end_timestamp": 1222.76,
+                "text": "That term is just borrowed from radioactive decay because the growth is exponentially looking at."
+            },
+            {
+                "start_timestamp": 1222.76,
+                "end_timestamp": 1227.76,
+                "text": "So we can also look at this as a half-length and say half-time."
+            },
+            {
+                "start_timestamp": 1227.76,
+                "end_timestamp": 1229.76,
+                "text": "Let's call this also half-length."
+            },
+            {
+                "start_timestamp": 1229.76,
+                "end_timestamp": 1231.76,
+                "text": "So let's define a half-length for alpha."
+            },
+            {
+                "start_timestamp": 1231.76,
+                "end_timestamp": 1234.76,
+                "text": "To make our pizza half is the original volume."
+            },
+            {
+                "start_timestamp": 1234.76,
+                "end_timestamp": 1236.76,
+                "text": "We shrink it by a factor of alpha."
+            },
+            {
+                "start_timestamp": 1236.76,
+                "end_timestamp": 1242.76,
+                "text": "The mathematical representation is just alpha to the power of n is a half, like here."
+            },
+            {
+                "start_timestamp": 1242.76,
+                "end_timestamp": 1244.76,
+                "text": "n is just the dimensions of our pizza."
+            },
+            {
+                "start_timestamp": 1244.76,
+                "end_timestamp": 1249.76,
+                "text": "Two dimensions plug in two and we have alpha to the power of two equals one half."
+            },
+            {
+                "start_timestamp": 1249.76,
+                "end_timestamp": 1256.76,
+                "text": "If we source this equation, we get alpha equals two to the power of minus one over n."
+            },
+            {
+                "start_timestamp": 1256.76,
+                "end_timestamp": 1263.76,
+                "text": "If we just calculate this log here, it's approximately one minus 0.7 over n."
+            },
+            {
+                "start_timestamp": 1263.76,
+                "end_timestamp": 1272.76,
+                "text": "So for two-d pizza, the half length is alpha, if we put in two into n, is 1 minus 0.35."
+            },
+            {
+                "start_timestamp": 1272.76,
+                "end_timestamp": 1279.76,
+                "text": "So about 80% of the pizzas that are diameter will contain half the area and half the salami."
+            },
+            {
+                "start_timestamp": 1279.76,
+                "end_timestamp": 1283.76,
+                "text": "For 3d pizza, now it's getting interesting."
+            },
+            {
+                "start_timestamp": 1284.76,
+                "end_timestamp": 1286.76,
+                "text": "For 3d pizza, now it's getting interesting."
+            },
+            {
+                "start_timestamp": 1286.76,
+                "end_timestamp": 1290.76,
+                "text": "For 3d pizza, alpha is 1 minus 0.23."
+            },
+            {
+                "start_timestamp": 1290.76,
+                "end_timestamp": 1296.76,
+                "text": "Half the volume lies just within 12% of its diameter from the boundary."
+            },
+            {
+                "start_timestamp": 1296.76,
+                "end_timestamp": 1302.76,
+                "text": "So half of all of the salami is distributed in only 12% from the diameter from the boundary."
+            },
+            {
+                "start_timestamp": 1302.76,
+                "end_timestamp": 1307.76,
+                "text": "So let's think big. Let's think at 350-dimensional pizza."
+            },
+            {
+                "start_timestamp": 1307.76,
+                "end_timestamp": 1310.76,
+                "text": "In this case, alpha is greater than 98%."
+            },
+            {
+                "start_timestamp": 1310.76,
+                "end_timestamp": 1321.76,
+                "text": "That means in 350 dimensions, almost all of the salami, 98% of the salami is within 1% of the pizzas diameter from its boundary."
+            },
+            {
+                "start_timestamp": 1321.76,
+                "end_timestamp": 1325.76,
+                "text": "The core question really is what proportion of the dataset is near the boundary."
+            },
+            {
+                "start_timestamp": 1325.76,
+                "end_timestamp": 1329.76,
+                "text": "This becomes relevant when we think about how data is spread."
+            },
+            {
+                "start_timestamp": 1329.76,
+                "end_timestamp": 1338.76,
+                "text": "If our data is uniformly spread across dimensions, understanding how it behaves near the boundary is crucial for model training and generalization."
+            },
+            {
+                "start_timestamp": 1338.76,
+                "end_timestamp": 1343.76,
+                "text": "So what we have discussed now this really holds unless the data is strongly clustered."
+            },
+            {
+                "start_timestamp": 1343.76,
+                "end_timestamp": 1348.76,
+                "text": "If your data points tend to stick together in certain regions, these calculations might not be quite accurate."
+            },
+            {
+                "start_timestamp": 1348.76,
+                "end_timestamp": 1352.76,
+                "text": "If you have more uniform distributed data, then it's more relevant."
+            },
+            {
+                "start_timestamp": 1352.76,
+                "end_timestamp": 1361.76,
+                "text": "But making the core if the data is uniformly distributed or clustered for that, you need to actually first project them into a dimensions and see how your distances behave."
+            },
+            {
+                "start_timestamp": 1361.76,
+                "end_timestamp": 1364.76,
+                "text": "Is it learnable or not?"
+            },
+            {
+                "start_timestamp": 1365.76,
+                "end_timestamp": 1377.76,
+                "text": "Another way to think about this is the idea that in higher dimensions, in dimensions, most Echlidean distances between observations will be nearly the same."
+            },
+            {
+                "start_timestamp": 1377.76,
+                "end_timestamp": 1389.76,
+                "text": "If I measure the distance between two points in Echlidean way, the square, all of the dimensions and then take the square root, the length of the vector between them, they will be almost the same, all of them, in very high dimensions."
+            },
+            {
+                "start_timestamp": 1389.76,
+                "end_timestamp": 1394.76,
+                "text": "And there also be close to the diameter of the region and closing them."
+            },
+            {
+                "start_timestamp": 1394.76,
+                "end_timestamp": 1400.76,
+                "text": "So when we say very close, we are actually taking, we're talking in terms of one over N."
+            },
+            {
+                "start_timestamp": 1400.76,
+                "end_timestamp": 1403.76,
+                "text": "So as dimension increases, this closeness becomes more pronounced."
+            },
+            {
+                "start_timestamp": 1403.76,
+                "end_timestamp": 1407.76,
+                "text": "And an important qualifier is really without strong clustering again."
+            },
+            {
+                "start_timestamp": 1407.76,
+                "end_timestamp": 1412.76,
+                "text": "If we have uniform data and you just characterize this data, the above statement really, really holds true."
+            },
+            {
+                "start_timestamp": 1412.76,
+                "end_timestamp": 1417.76,
+                "text": "So the distances between these points will be more or less the same."
+            },
+            {
+                "start_timestamp": 1417.76,
+                "end_timestamp": 1431.76,
+                "text": "You can also say that, yeah, so in this figure, there's another way to represent this and illustrate this, this tells us how the volume of a hypersphere changes relatively to the hypercube that contains it."
+            },
+            {
+                "start_timestamp": 1431.76,
+                "end_timestamp": 1438.76,
+                "text": "So if I draw a cube around here, what is the area that's between the sphere and the cube?"
+            },
+            {
+                "start_timestamp": 1438.76,
+                "end_timestamp": 1451.76,
+                "text": "And the core takeaway is really that what we get from the 2D and 3D case or even higher dimensions that the volume of the hypersphere starts to shrink significantly, becoming almost negligible compared to the volume of the hypercube that encloses it."
+            },
+            {
+                "start_timestamp": 1451.76,
+                "end_timestamp": 1460.76,
+                "text": "This has really implications because that means that most of our data now lives outside in these boundary regions."
+            },
+            {
+                "start_timestamp": 1460.76,
+                "end_timestamp": 1465.76,
+                "text": "The figure also shows how the number of corners in a hypercube exponentially grow with dimensionality."
+            },
+            {
+                "start_timestamp": 1465.76,
+                "end_timestamp": 1475.76,
+                "text": "And this is then telling you, you know, how much how many corners you have really that can contain volume and includes this hypersphere."
+            },
+            {
+                "start_timestamp": 1475.76,
+                "end_timestamp": 1482.76,
+                "text": "So in an 8D hypercube, for example, that that one has how many corners, 256 corners."
+            },
+            {
+                "start_timestamp": 1482.76,
+                "end_timestamp": 1509.76,
+                "text": "And this can really demonstrate somehow how actually your data starts to not only live in the right of that space, but the more dimensions you have, the more likely it is that all of your data each sample lives in its own corner of say that hypercube, if you approximate that space like that usually spaces more spherically, but the right each has a distinct location if you have really high dimension spaces."
+            },
+            {
+                "start_timestamp": 1509.76,
+                "end_timestamp": 1520.76,
+                "text": "Well, the distance between corners of a cube, they are equal, right. So the distances, if every sample lives its lives in its own corner, the distances become almost the same vision."
+            },
+            {
+                "start_timestamp": 1520.76,
+                "end_timestamp": 1531.76,
+                "text": "Damian also tried to illustrate it that way is probably the best you can get for very high dimensions. So in three dimensions, we can still kind of comprehend what's going on. All of the samples lives somewhere in this space of the enclosing hypercube."
+            },
+            {
+                "start_timestamp": 1531.76,
+                "end_timestamp": 1543.76,
+                "text": "But in very high dimensions, it's very difficult to visualize you would need, if you measure the distance, you would need to go back here going back out to the other dog and so all the distances become more or less the same."
+            },
+            {
+                "start_timestamp": 1543.76,
+                "end_timestamp": 1566.76,
+                "text": "So the unicube assumption with the corners is not super correct, it's probably one of the most intuitive ways to think about why distances become equal with the corners, but the unicube is in fact asymmetric and it's not the greatest approximation."
+            },
+            {
+                "start_timestamp": 1566.76,
+                "end_timestamp": 1580.76,
+                "text": "To mitigate this issue, one approach is to say, roar the interval into a loop. So the unicube, we can roar this interval into a loop, a unicube in one, it would be just a line segment, so we can roll it in the loop, where the starting point zero meets at the end at point one."
+            },
+            {
+                "start_timestamp": 1580.76,
+                "end_timestamp": 1593.76,
+                "text": "This creates what is actually known in higher dimensions as a detour, and in one way it just looks like this, and two becomes this kind of strip and in many dimensions becomes a thourose."
+            },
+            {
+                "start_timestamp": 1593.76,
+                "end_timestamp": 1606.76,
+                "text": "And when we plot the distribution of normalized distances between different samples in this multi-dimensional space, and quite interesting pattern emerges, the normalization process sent us the histogram around a value of approximately 0.58."
+            },
+            {
+                "start_timestamp": 1606.76,
+                "end_timestamp": 1614.76,
+                "text": "And now one key insight to draw really from this is that around any given point in a high dimension of torus almost all other points are nearly the same distance away."
+            },
+            {
+                "start_timestamp": 1614.76,
+                "end_timestamp": 1621.76,
+                "text": "Look, if you look at the histograms, you see the higher the dimensions get, the more closer these distances between all of the points on this torus become."
+            },
+            {
+                "start_timestamp": 1621.76,
+                "end_timestamp": 1631.76,
+                "text": "This is still counterintuitive, but quite important, especially since in machine learning to make a call, if this is a cat or a dog, we need to measure distance, right?"
+            },
+            {
+                "start_timestamp": 1631.76,
+                "end_timestamp": 1637.76,
+                "text": "Is this far away from each other than probably their different classes, is close to each other, they are probably the same classes."
+            },
+            {
+                "start_timestamp": 1637.76,
+                "end_timestamp": 1644.76,
+                "text": "And again, to approximate the lips, this continuous function of r2 power of t2r, so some protection function with a certain epsilon accuracy."
+            },
+            {
+                "start_timestamp": 1644.76,
+                "end_timestamp": 1650.76,
+                "text": "One needs in order of epsilon to power of minus disambles."
+            },
+            {
+                "start_timestamp": 1650.76,
+                "end_timestamp": 1661.76,
+                "text": "If you put this into perspective, consider an image from whatever your smartphone with a resolution of 12 megapixels and say three color channels, this results in 36 million numerically elements."
+            },
+            {
+                "start_timestamp": 1661.76,
+                "end_timestamp": 1679.76,
+                "text": "And if we want to approximate some classifier, say cats versus dogs, with an error, with an accuracy of approximately 10%, so 0.1, we would require an astounding 10 to the 36 samples to approximate this function space relatively accurately."
+            },
+            {
+                "start_timestamp": 1680.76,
+                "end_timestamp": 1693.76,
+                "text": "We have a 10% error. So for context, that's a number ranging from 10 to the 78 to 10 to the 82, which is actually more atoms than they are in the known observable universe."
+            },
+            {
+                "start_timestamp": 1693.76,
+                "end_timestamp": 1705.76,
+                "text": "That's how many pictures of cats and dogs you would need to accurately, with a 10% error, accurately approximate a classifier function that can classify you between cats and dogs."
+            },
+            {
+                "start_timestamp": 1706.76,
+                "end_timestamp": 1713.76,
+                "text": "Another intriguing point to consider is how the volume of a circle of hyperspace changes relatively to the volume of a square or hypercube as you have just seen before."
+            },
+            {
+                "start_timestamp": 1713.76,
+                "end_timestamp": 1723.76,
+                "text": "That is something you can study in depth more to see what the mathematical properties are of these spaces and how counterintuitively this really behaves."
+            },
+            {
+                "start_timestamp": 1723.76,
+                "end_timestamp": 1727.76,
+                "text": "This is not just an intellectual exercise. It really has practical implications for the complexity."
+            },
+            {
+                "start_timestamp": 1728.76,
+                "end_timestamp": 1741.76,
+                "text": "And when you think about feasibility of certain machine learning algorithms, in my experience, I think most of the attempts to use machine learning deep learning, especially for certain applications, which fail really fail because that data is just a similar."
+            },
+            {
+                "start_timestamp": 1741.76,
+                "end_timestamp": 1756.76,
+                "text": "If you want to distinguish very, very, very similar things from each other, say, grass types and you have lots of different green pictures of a lot of grass, then it will be a very difficult program because you need really a lot of samples to generalize these functions."
+            },
+            {
+                "start_timestamp": 1758.76,
+                "end_timestamp": 1767.76,
+                "text": "So let's talk about another important concept of general learning systems. This is mainly explaining terminology."
+            },
+            {
+                "start_timestamp": 1767.76,
+                "end_timestamp": 1772.76,
+                "text": "So let's talk about invariance and ectrivariance. What do these things mean? They are simply then the term might suggest."
+            },
+            {
+                "start_timestamp": 1772.76,
+                "end_timestamp": 1776.76,
+                "text": "So this image here contains a cat, right?"
+            },
+            {
+                "start_timestamp": 1776.76,
+                "end_timestamp": 1786.76,
+                "text": "And actually, I don't care where in the image this cat is located. If I look at the image, I would say no matter where the cat is located, I would classify this image as an image of a cat."
+            },
+            {
+                "start_timestamp": 1787.76,
+                "end_timestamp": 1793.76,
+                "text": "And that property that regardless where the image is where the object is located, the image is called shift invariance."
+            },
+            {
+                "start_timestamp": 1793.76,
+                "end_timestamp": 1800.76,
+                "text": "In shift invariance is really a property that describes the system's unchanging response when the input is shifted."
+            },
+            {
+                "start_timestamp": 1800.76,
+                "end_timestamp": 1804.76,
+                "text": "So the input shifts, the output doesn't, the output stays where it is."
+            },
+            {
+                "start_timestamp": 1804.76,
+                "end_timestamp": 1813.76,
+                "text": "In this context, for example, of image processing or computer vision, this means that the features of the cat in the image should be recognizable regardless of its position in the frame."
+            },
+            {
+                "start_timestamp": 1814.76,
+                "end_timestamp": 1823.76,
+                "text": "This only depends on the generalizable features of that cat. The cat has a snout and ears and tail and everything these features define the cat not very positioned in the frame."
+            },
+            {
+                "start_timestamp": 1823.76,
+                "end_timestamp": 1829.76,
+                "text": "This is already something a conventional neural network where everything is connected to everything and the input is linearized would struggle a lot."
+            },
+            {
+                "start_timestamp": 1829.76,
+                "end_timestamp": 1836.76,
+                "text": "This property of shift invariance is quite critically in many deep learning applications, particularly in convolutional neural networks."
+            },
+            {
+                "start_timestamp": 1837.76,
+                "end_timestamp": 1845.76,
+                "text": "In CNNs, we really want the network to recognize the cat, whether it's in the corner or in the center of the image and probably even find and annotate where the image is."
+            },
+            {
+                "start_timestamp": 1845.76,
+                "end_timestamp": 1853.76,
+                "text": "An understanding shift invariance helps us to appreciate why certain algorithms like CNNs are actually effective at tasks like object recognition."
+            },
+            {
+                "start_timestamp": 1854.76,
+                "end_timestamp": 1865.76,
+                "text": "So shift invariance really allows models to channelize better from their training data to new unseen data in this really just a term describing a property of a learning system."
+            },
+            {
+                "start_timestamp": 1867.76,
+                "end_timestamp": 1874.76,
+                "text": "Shift invariance is not just a theoretical concept, but practical necessity for robust machine learning and how this is achieved."
+            },
+            {
+                "start_timestamp": 1874.76,
+                "end_timestamp": 1882.76,
+                "text": "To some degree, we'll discuss in a few slides actually when we look into how CNNs can be built from some basic components."
+            },
+            {
+                "start_timestamp": 1883.76,
+                "end_timestamp": 1891.76,
+                "text": "So this is what I said already. If we define shift variance more mathematically, we call say the shift itself."
+            },
+            {
+                "start_timestamp": 1891.76,
+                "end_timestamp": 1899.76,
+                "text": "We denote this with an operator s with a subscript v where the redefines the vector where which we shift the object in this case, the cat around."
+            },
+            {
+                "start_timestamp": 1899.76,
+                "end_timestamp": 1906.76,
+                "text": "This is this red vector, red vector. When we apply this shift operator to the input, we are essentially transforming its coordinates in the input space."
+            },
+            {
+                "start_timestamp": 1907.76,
+                "end_timestamp": 1917.76,
+                "text": "This is critical for applications where the object of interest could be anywhere in the field of view, but the object itself is more or less not immutable, but more or less feature consistent."
+            },
+            {
+                "start_timestamp": 1920.76,
+                "end_timestamp": 1927.76,
+                "text": "So it's probably worth at this point to clear up that CNNs are not thinking machines. They're complex functional approximators that train step by step."
+            },
+            {
+                "start_timestamp": 1928.76,
+                "end_timestamp": 1941.76,
+                "text": "How to extract features from this input image to see, okay, there is still paths that would activate, for example, containing the features of cat, so they are shift invariant, but they are not thinking really about these cats."
+            },
+            {
+                "start_timestamp": 1941.76,
+                "end_timestamp": 1944.76,
+                "text": "So shift invariance is a critical property."
+            },
+            {
+                "start_timestamp": 1945.76,
+                "end_timestamp": 1953.76,
+                "text": "The key really is to understand that shift invariance, invariance means the input changes, the output does not change."
+            },
+            {
+                "start_timestamp": 1954.76,
+                "end_timestamp": 1964.76,
+                "text": "If I shift, for example, if the output should not change, the output does not change. If I shift things around, like that object of the cat, then it will still be categorized as a cat."
+            },
+            {
+                "start_timestamp": 1964.76,
+                "end_timestamp": 1966.76,
+                "text": "Now,"
+            },
+            {
+                "start_timestamp": 1967.76,
+                "end_timestamp": 1981.76,
+                "text": "Acre variance on the other hand means that here, acre variance on the other hand means that if I change the input, the output changes in the same way, probably in your way."
+            },
+            {
+                "start_timestamp": 1981.76,
+                "end_timestamp": 1987.76,
+                "text": "Imagine a model that segments every pixel in a cat. It identifies the pixels that make the cat."
+            },
+            {
+                "start_timestamp": 1987.76,
+                "end_timestamp": 1993.76,
+                "text": "It says every pixel that belongs to the cat, it says it is one, it clarifies it is one, and every other pixel is zero."
+            },
+            {
+                "start_timestamp": 1993.76,
+                "end_timestamp": 2004.76,
+                "text": "This scenario, if the cat in the image moves around, the segmented output, so the identification of these pixels, they should also shift in the exact same way with the red back door read here, with the same shift operator."
+            },
+            {
+                "start_timestamp": 2004.76,
+                "end_timestamp": 2013.76,
+                "text": "So simply put shift acre variance means that applying the shift operator after the function yields the same result as applying the function after the shift."
+            },
+            {
+                "start_timestamp": 2013.76,
+                "end_timestamp": 2021.76,
+                "text": "Okay, just applying the shift operator after the function yields the same results as applying the function after the shift."
+            },
+            {
+                "start_timestamp": 2022.76,
+                "end_timestamp": 2025.76,
+                "text": "So to put it formally, as shown here,"
+            },
+            {
+                "start_timestamp": 2027.76,
+                "end_timestamp": 2034.76,
+                "text": "s applied to V should be the same as f applied to s."
+            },
+            {
+                "start_timestamp": 2034.76,
+                "end_timestamp": 2038.76,
+                "text": "So s applied to f should be the same as f applied to s."
+            },
+            {
+                "start_timestamp": 2039.76,
+                "end_timestamp": 2045.76,
+                "text": "So this commute and you can assume that the same shift will be here."
+            },
+            {
+                "start_timestamp": 2045.76,
+                "end_timestamp": 2052.76,
+                "text": "So this commutative law here is very important if the input changes the output changes in the same way."
+            },
+            {
+                "start_timestamp": 2052.76,
+                "end_timestamp": 2055.76,
+                "text": "This is what acre variance means."
+            },
+            {
+                "start_timestamp": 2055.76,
+                "end_timestamp": 2063.76,
+                "text": "So to put it simply, in variance is about stability. When we talk about in variance, what we mean is that no matter how the input distance from the output should remain constant."
+            },
+            {
+                "start_timestamp": 2064.76,
+                "end_timestamp": 2070.76,
+                "text": "This is really, really useful for tasks where the recognition of an object is more important than the position in the input space."
+            },
+            {
+                "start_timestamp": 2070.76,
+                "end_timestamp": 2075.76,
+                "text": "And if we talk about acre variance, acre variance is about consistent transformation."
+            },
+            {
+                "start_timestamp": 2075.76,
+                "end_timestamp": 2082.76,
+                "text": "In an acre variance system, the transformation applied to the input is exactly the same as the transformation applied to the output."
+            },
+            {
+                "start_timestamp": 2082.76,
+                "end_timestamp": 2087.76,
+                "text": "For example, if we move an object within an image, the corresponding output should move in the same way."
+            },
+            {
+                "start_timestamp": 2088.76,
+                "end_timestamp": 2095.76,
+                "text": "And understanding the differences between these two can significantly affect how well our model performs depending on the task, really your tackling."
+            },
+            {
+                "start_timestamp": 2095.76,
+                "end_timestamp": 2104.76,
+                "text": "So as we delve deeper into complex models and tasks, keep these concepts of invariance, acre variance, really in mind they will be crucial."
+            },
+            {
+                "start_timestamp": 2106.76,
+                "end_timestamp": 2116.76,
+                "text": "Another important tool is the concept of inductive bias, which is a term coming from philosophy, or the assumptions that guide the learning process in machine learning models."
+            }
+        ]
+    },
+    {
+        "segment_number": 5,
+        "segment_title": "Principles of Locality and Translation Invariance",
+        "segment_start_timestamp": 2151.76,
+        "segment_end_timestamp": 2230.76,
+        "transcript": [
+            {
+                "start_timestamp": 2151.76,
+                "end_timestamp": 2154.76,
+                "text": "Okay, that's our first principle, locality."
+            },
+            {
+                "start_timestamp": 2154.76,
+                "end_timestamp": 2158.76,
+                "text": "Second principle."
+            },
+            {
+                "start_timestamp": 2158.76,
+                "end_timestamp": 2160.76,
+                "text": "Second principle is actually locality."
+            },
+            {
+                "start_timestamp": 2160.76,
+                "end_timestamp": 2170.76,
+                "text": "The idea behind locality is that you shouldn't have to consider the entire image if you want to find the features of a specific object."
+            },
+            {
+                "start_timestamp": 2170.76,
+                "end_timestamp": 2176.76,
+                "text": "You shouldn't have to consider far of information to understand what's happening at a specific location in your data."
+            },
+            {
+                "start_timestamp": 2176.76,
+                "end_timestamp": 2188.76,
+                "text": "For instance, if you're looking at an image, the pixels immediately surrounding a location ij should provide sufficient information and sufficient context actually to determine what that area in the image contains."
+            },
+            {
+                "start_timestamp": 2188.76,
+                "end_timestamp": 2194.76,
+                "text": "Did I really need to look into the left corner of the image of the cat before to determine that the cat's ear is a cat's ear?"
+            },
+            {
+                "start_timestamp": 2194.76,
+                "end_timestamp": 2200.76,
+                "text": "I will only need to look at the local information surrounding the cat's ear to understand that it's a cat's ear."
+            },
+            {
+                "start_timestamp": 2200.76,
+                "end_timestamp": 2209.76,
+                "text": "Both of these principles are deeply embedded actually in many of the architectures we'll discuss in a bit in deep learning, particularly for convolution neural networks."
+            },
+            {
+                "start_timestamp": 2209.76,
+                "end_timestamp": 2214.76,
+                "text": "So let's think about locality a little bit more."
+            },
+            {
+                "start_timestamp": 2214.76,
+                "end_timestamp": 2218.76,
+                "text": "Maybe also about shifting variance, but mainly locality."
+            },
+            {
+                "start_timestamp": 2218.76,
+                "end_timestamp": 2230.76,
+                "text": "Translation in variance and locality can be practically applied using one of the most common algorithms, most naive algorithms you can come up with in computer vision when you think about detecting an object."
+            },
+            {
+                "start_timestamp": 2230.76,
+                "end_timestamp": 2234.76,
+                "text": "Well, what could you do? You could define your object."
+            }
+        ]
+    },
+    {
+        "segment_number": 6,
+        "segment_title": "From Fully Connected to Convolutional Networks",
+        "segment_start_timestamp": 2230.76,
+        "segment_end_timestamp": 2526.76,
+        "transcript": [
+            {
+                "start_timestamp": 2230.76,
+                "end_timestamp": 2234.76,
+                "text": "Well, what could you do? You could define your object."
+            },
+            {
+                "start_timestamp": 2234.76,
+                "end_timestamp": 2236.76,
+                "text": "You say, I want to find George."
+            },
+            {
+                "start_timestamp": 2236.76,
+                "end_timestamp": 2240.76,
+                "text": "I don't know if this guy is really called George, but let's say we want to find this person."
+            },
+            {
+                "start_timestamp": 2240.76,
+                "end_timestamp": 2253.76,
+                "text": "How could we ideally do this? Well, we take George, slide him over the image of this entire area and the lower lower toll and then let's see if we have somewhere a match."
+            },
+            {
+                "start_timestamp": 2253.76,
+                "end_timestamp": 2267.76,
+                "text": "We can just correlate this. We say we define this sub image here with George and later on we'll call such a sub image that defines what we're looking for a kernel, KXY, to analyze the local regions here."
+            },
+            {
+                "start_timestamp": 2267.76,
+                "end_timestamp": 2275.76,
+                "text": "And then we come up with some sort of metric that measures how correlated this kernel is at every location at this image of the role or at all."
+            },
+            {
+                "start_timestamp": 2275.76,
+                "end_timestamp": 2285.76,
+                "text": "And we can come up with this correlation formula. We can just say we sum up all of the pixels, we sum up all of the pixel differences and the smaller the value, the better."
+            },
+            {
+                "start_timestamp": 2285.76,
+                "end_timestamp": 2290.76,
+                "text": "So if you have this image, this location and."
+            },
+            {
+                "start_timestamp": 2290.76,
+                "end_timestamp": 2295.76,
+                "text": "So for autocorrelation, we multiplied them just together and sum up to the higher."
+            },
+            {
+                "start_timestamp": 2295.76,
+                "end_timestamp": 2310.76,
+                "text": "The higher this this function gets the more these two are correlated. You really can come up with anything you like here. You can count the pixel differences or in this case, we just multiplied them with these two functions together to kernel and the image and then we measure what this varies the highest response."
+            },
+            {
+                "start_timestamp": 2310.76,
+                "end_timestamp": 2332.76,
+                "text": "This specific one where you multiply together, this is called correlation, this is the correlation formula and it's kind of key part of many of the algorithms we use in computer vision and the surprising fact deal with probably get to in this lecture is that most of the convolution networks we use are actually correlation networks that use exactly that function."
+            },
+            {
+                "start_timestamp": 2332.76,
+                "end_timestamp": 2337.76,
+                "text": "And why does it the case will discuss in a little bit now. Let's just think about finding George."
+            },
+            {
+                "start_timestamp": 2337.76,
+                "end_timestamp": 2342.76,
+                "text": "So the first principle of translation in various tells us that it doesn't matter where in the image to person is really located."
+            },
+            {
+                "start_timestamp": 2342.76,
+                "end_timestamp": 2350.76,
+                "text": "I would want to find George anywhere in this in this image. Also our algorithms should be able to detect the person no matter where they are in this image."
+            },
+            {
+                "start_timestamp": 2350.76,
+                "end_timestamp": 2361.76,
+                "text": "The second principle locality comes into play here with how the kernel is actually defined. We are operating under the assumption that all the information needed to identify George is found in a local neighborhood of pixels."
+            },
+            {
+                "start_timestamp": 2361.76,
+                "end_timestamp": 2372.76,
+                "text": "So we don't need to analyze the entire image at every location where we measure this correlation function. Now we only analyze it in the area of this of this kernel."
+            },
+            {
+                "start_timestamp": 2372.76,
+                "end_timestamp": 2379.76,
+                "text": "And now let's see what happens if we apply this function to every pixel."
+            },
+            {
+                "start_timestamp": 2379.76,
+                "end_timestamp": 2389.76,
+                "text": "So we run this kernel over it and what we get out is a correlation function like here. And as you can see George is here at the floor."
+            },
+            {
+                "start_timestamp": 2389.76,
+                "end_timestamp": 2396.76,
+                "text": "So it's probably that direct way doesn't even work well even if I take a patch out of the original image."
+            },
+            {
+                "start_timestamp": 2396.76,
+                "end_timestamp": 2401.76,
+                "text": "The top image here is just a heat map for function across the image."
+            },
+            {
+                "start_timestamp": 2401.76,
+                "end_timestamp": 2408.76,
+                "text": "And well, this approach may work or may not work, but apparently it doesn't generalize very well."
+            },
+            {
+                "start_timestamp": 2408.76,
+                "end_timestamp": 2419.76,
+                "text": "It doesn't really understand what features George is composed of. And so apparently bright and the color was more important here for this correlation function."
+            },
+            {
+                "start_timestamp": 2419.76,
+                "end_timestamp": 2430.76,
+                "text": "And this is only one step. So don't expect this to work. But now let's think about something interesting."
+            },
+            {
+                "start_timestamp": 2430.76,
+                "end_timestamp": 2433.76,
+                "text": "Let's think about convolutions."
+            },
+            {
+                "start_timestamp": 2433.76,
+                "end_timestamp": 2444.76,
+                "text": "Convolutions are quite similar to what we just discussed correlations, but let's probably approach the whole thing from a slightly different angle."
+            },
+            {
+                "start_timestamp": 2444.76,
+                "end_timestamp": 2450.76,
+                "text": "Let's go back and reconsider the classical fully connected neural network."
+            },
+            {
+                "start_timestamp": 2450.76,
+                "end_timestamp": 2455.76,
+                "text": "But each input is really connected to each node. So let's recall how this works."
+            },
+            {
+                "start_timestamp": 2455.76,
+                "end_timestamp": 2459.76,
+                "text": "In a fully connected network, each input is connected to each node in the subsequent layer."
+            },
+            {
+                "start_timestamp": 2459.76,
+                "end_timestamp": 2465.76,
+                "text": "So it means that every single input feature influences every single neuron in the next layer."
+            },
+            {
+                "start_timestamp": 2465.76,
+                "end_timestamp": 2470.76,
+                "text": "That is not quite conform with our locality principle, but it should still work quite."
+            },
+            {
+                "start_timestamp": 2470.76,
+                "end_timestamp": 2474.76,
+                "text": "This is this architecture, the advantage really of this is that this is extremely flexible."
+            },
+            {
+                "start_timestamp": 2474.76,
+                "end_timestamp": 2479.76,
+                "text": "In the rare cases where probably locality does not apply, this will still work."
+            },
+            {
+                "start_timestamp": 2479.76,
+                "end_timestamp": 2485.76,
+                "text": "Our locality approach from before where we run the current local image will probably not work."
+            },
+            {
+                "start_timestamp": 2485.76,
+                "end_timestamp": 2490.76,
+                "text": "The classical fully connected neural network can capture any kind of relationships between inputs."
+            },
+            {
+                "start_timestamp": 2490.76,
+                "end_timestamp": 2493.76,
+                "text": "So it's an universal approximator."
+            },
+            {
+                "start_timestamp": 2493.76,
+                "end_timestamp": 2496.76,
+                "text": "It can do it particularly well with linear relationships."
+            },
+            {
+                "start_timestamp": 2496.76,
+                "end_timestamp": 2505.76,
+                "text": "However, this flexibility really comes at the cost that as we discussed already, computational complexity will be informed by the course of dimensionality."
+            },
+            {
+                "start_timestamp": 2505.76,
+                "end_timestamp": 2512.76,
+                "text": "And it has quite a lot of potential for overfitting."
+            },
+            {
+                "start_timestamp": 2512.76,
+                "end_timestamp": 2517.76,
+                "text": "So keep this in mind. Maybe delve a little bit further into CNNs."
+            },
+            {
+                "start_timestamp": 2517.76,
+                "end_timestamp": 2526.76,
+                "text": "And probably let's deconstruct FCN a little bit more to get to an idea that eventually led to convolutional networks."
+            },
+            {
+                "start_timestamp": 2526.76,
+                "end_timestamp": 2534.76,
+                "text": "So let's just reorganize our fully connected network a little bit and look at the weights of the input."
+            }
+        ]
+    },
+    {
+        "segment_number": 7,
+        "segment_title": "Convolution vs Correlation",
+        "segment_start_timestamp": 2526.76,
+        "segment_end_timestamp": 3002.76,
+        "transcript": [
+            {
+                "start_timestamp": 2526.76,
+                "end_timestamp": 2534.76,
+                "text": "So let's just reorganize our fully connected network a little bit and look at the weights of the input."
+            },
+            {
+                "start_timestamp": 2534.76,
+                "end_timestamp": 2538.76,
+                "text": "So input comes in what we do is just a weight made matrix times input multiplication."
+            },
+            {
+                "start_timestamp": 2538.76,
+                "end_timestamp": 2540.76,
+                "text": "So everything is connected to everything."
+            },
+            {
+                "start_timestamp": 2540.76,
+                "end_timestamp": 2545.76,
+                "text": "And then we have a connection down to some some sort of input."
+            },
+            {
+                "start_timestamp": 2545.76,
+                "end_timestamp": 2550.76,
+                "text": "Then a fully connected layer, each node in one layer connects to every other node."
+            },
+            {
+                "start_timestamp": 2550.76,
+                "end_timestamp": 2557.76,
+                "text": "And this is this equation just tells us that where we have the weight matrices and input from the previous entry code we add them together."
+            },
+            {
+                "start_timestamp": 2557.76,
+                "end_timestamp": 2559.76,
+                "text": "So just building up products here."
+            },
+            {
+                "start_timestamp": 2559.76,
+                "end_timestamp": 2562.76,
+                "text": "So this this setup actually leads to a large number of parameters."
+            },
+            {
+                "start_timestamp": 2562.76,
+                "end_timestamp": 2565.76,
+                "text": "And all of them are populated in this rate matrix here."
+            },
+            {
+                "start_timestamp": 2565.76,
+                "end_timestamp": 2571.76,
+                "text": "And basically you have number of nodes and power of two weights here."
+            },
+            {
+                "start_timestamp": 2571.76,
+                "end_timestamp": 2573.76,
+                "text": "So the size of this matrix."
+            },
+            {
+                "start_timestamp": 2573.76,
+                "end_timestamp": 2578.76,
+                "text": "So again, if we consider an input of 36 million elements like on high resolution image."
+            },
+            {
+                "start_timestamp": 2578.76,
+                "end_timestamp": 2583.76,
+                "text": "This is 36 million square parameters, which is just an astronomical number."
+            },
+            {
+                "start_timestamp": 2583.76,
+                "end_timestamp": 2588.76,
+                "text": "If you have here the size of an image linearized linearized."
+            },
+            {
+                "start_timestamp": 2588.76,
+                "end_timestamp": 2595.76,
+                "text": "So this not only makes the model computation very expensive, but also raises the likelihood of overfitting the more parameters you have."
+            },
+            {
+                "start_timestamp": 2595.76,
+                "end_timestamp": 2597.76,
+                "text": "You don't form an information port like where you have to generalize."
+            },
+            {
+                "start_timestamp": 2597.76,
+                "end_timestamp": 2601.76,
+                "text": "You can just memorize all of the training data and then don't don't generalize at all."
+            },
+            {
+                "start_timestamp": 2601.76,
+                "end_timestamp": 2607.76,
+                "text": "If I would just store in this matrix how each of these images look like and then compare like the correlation function before every image to my training."
+            },
+            {
+                "start_timestamp": 2607.76,
+                "end_timestamp": 2615.76,
+                "text": "Memory, then I can have perfect performance on the training set, but terrible performance on any test set because they don't fit."
+            },
+            {
+                "start_timestamp": 2615.76,
+                "end_timestamp": 2620.76,
+                "text": "Of course, what I've memorized in the data."
+            },
+            {
+                "start_timestamp": 2620.76,
+                "end_timestamp": 2626.76,
+                "text": "So how can we simplify this a little bit just one kind of deep learning,"
+            },
+            {
+                "start_timestamp": 2626.76,
+                "end_timestamp": 2629.76,
+                "text": "deep learning, lingo machine learning, lingo definition here."
+            },
+            {
+                "start_timestamp": 2629.76,
+                "end_timestamp": 2638.76,
+                "text": "If people say something is intractable, they really mean it's hard to control a deal with and something like that for high dimensional problems is basically tractor."
+            },
+            {
+                "start_timestamp": 2638.76,
+                "end_timestamp": 2642.76,
+                "text": "So you probably won't be able to compute any of these weight matrices in a reasonable time."
+            },
+            {
+                "start_timestamp": 2642.76,
+                "end_timestamp": 2646.76,
+                "text": "So you can say this is intractable for reasonable size problems."
+            },
+            {
+                "start_timestamp": 2646.76,
+                "end_timestamp": 2651.76,
+                "text": "It will still work for your tabular four or five dimensional data, no question, but for images, this will fail."
+            },
+            {
+                "start_timestamp": 2651.76,
+                "end_timestamp": 2667.76,
+                "text": "Now, one early idea how to simplify this is was actually locality and just assume that we don't need to connect everything to everything to reduce number parameters in our model without losing the ability to really capture important features."
+            },
+            {
+                "start_timestamp": 2667.76,
+                "end_timestamp": 2672.76,
+                "text": "So one way to do this is just to use vastly connected neural networks."
+            },
+            {
+                "start_timestamp": 2672.76,
+                "end_timestamp": 2686.76,
+                "text": "In this input, in this architecture, each input neuron is just connected to small number of K hidden neurons rather than every other every every neuron in the previous layer."
+            },
+            {
+                "start_timestamp": 2686.76,
+                "end_timestamp": 2690.76,
+                "text": "So what does this mean in number parameters? Well, now we have K times n parameters."
+            },
+            {
+                "start_timestamp": 2690.76,
+                "end_timestamp": 2693.76,
+                "text": "So how many I choose to connect to? So here in this case is three."
+            },
+            {
+                "start_timestamp": 2693.76,
+                "end_timestamp": 2697.76,
+                "text": "But K times n is better, much better than n squared."
+            },
+            {
+                "start_timestamp": 2697.76,
+                "end_timestamp": 2707.76,
+                "text": "So we can populate our weight matrix here along the diagonal and the width of this diagonal, we define how many previous neurons you decide to connect to."
+            },
+            {
+                "start_timestamp": 2707.76,
+                "end_timestamp": 2719.76,
+                "text": "So for instance, if K is three, you have an input of 36 million elements, then you only need three times 36 million parameters, which is still an astronomical number, but it's a huge reduction compared to 36 million square."
+            },
+            {
+                "start_timestamp": 2719.76,
+                "end_timestamp": 2727.76,
+                "text": "So early work in this area has been done by a young account and colleagues utilizing this so called sparse connections, and to build more efficient networks."
+            },
+            {
+                "start_timestamp": 2727.76,
+                "end_timestamp": 2731.76,
+                "text": "This is really a foundational concept that paved the way for convolutional networks."
+            },
+            {
+                "start_timestamp": 2731.76,
+                "end_timestamp": 2740.76,
+                "text": "Now a few words on the side. Of course, this is still trained through back propagation, which you should be well familiar with from machine learning and modular perceptron training and so on."
+            },
+            {
+                "start_timestamp": 2740.76,
+                "end_timestamp": 2747.76,
+                "text": "So this all of these weights are individual numbers, individual weights trains. They're just less of them and you can store them diagonally."
+            },
+            {
+                "start_timestamp": 2747.76,
+                "end_timestamp": 2755.76,
+                "text": "So you put something in a measured area and then back propagates through the partial differentials and update your weights every time you see a new training setup."
+            },
+            {
+                "start_timestamp": 2755.76,
+                "end_timestamp": 2768.76,
+                "text": "If you're not familiar with back propagation, please revisit this material. It's quite essential to understand to get a better intuition, actually, what's going on here because at the end of the day, you're just applying your optimizer to this and define how this error should look like."
+            },
+            {
+                "start_timestamp": 2768.76,
+                "end_timestamp": 2778.76,
+                "text": "Let's get back to this. So this is already a huge reduction in parameters and but it led to action even better idea where we said, okay."
+            },
+            {
+                "start_timestamp": 2778.76,
+                "end_timestamp": 2788.76,
+                "text": "How how's about we don't learn all of these parameters, but share the weights between them. So we choose three, for example, here."
+            },
+            {
+                "start_timestamp": 2788.76,
+                "end_timestamp": 2795.76,
+                "text": "But instead of letting all of these weights be adopted, we just say all of these triplets here are the same."
+            },
+            {
+                "start_timestamp": 2795.76,
+                "end_timestamp": 2811.76,
+                "text": "And this concept is called weight sharing. Same integration here where we say Y equals W 1 before minus 1 times X 1 before plus W 0, which is the center plus W plus 1."
+            },
+            {
+                "start_timestamp": 2811.76,
+                "end_timestamp": 2821.76,
+                "text": "They're always the same way it's applied. It's not like these are in this indexed into the weight matrix. No, this red, green and blue weight. They're always the same."
+            },
+            {
+                "start_timestamp": 2821.76,
+                "end_timestamp": 2827.76,
+                "text": "They are just reused for different input neurons. This is what we refer to really as weight sharing. Keep this in mind."
+            },
+            {
+                "start_timestamp": 2827.76,
+                "end_timestamp": 2833.76,
+                "text": "If something is the same, it's weight sharing. And now if you look at this matrix, we only need to remember three values."
+            },
+            {
+                "start_timestamp": 2833.76,
+                "end_timestamp": 2841.76,
+                "text": "So in this model, each input neuron is connected to some more number of K hidden neurons, just like in the sparsely connected network we discussed earlier."
+            },
+            {
+                "start_timestamp": 2841.76,
+                "end_timestamp": 2847.76,
+                "text": "However, this time the weights are shared amongst the connections. So this results in a really dramatic reduction of parameters."
+            },
+            {
+                "start_timestamp": 2847.76,
+                "end_timestamp": 2857.76,
+                "text": "For example, we have three parameters that's only three parameters we need to learn for this network. It's not three times the number of input. No, it's three parameters, one, two, three."
+            },
+            {
+                "start_timestamp": 2857.76,
+                "end_timestamp": 2868.76,
+                "text": "That's all we need to learn in a network like this. And it's basically just a spars set up with shared weights."
+            },
+            {
+                "start_timestamp": 2868.76,
+                "end_timestamp": 2885.76,
+                "text": "But this is the fundamental idea that made convolutional networks a powerful and efficient. We shared the weights across the neurons and then let these triplets or however you define the size of this kernel, this part here, we learned."
+            },
+            {
+                "start_timestamp": 2885.76,
+                "end_timestamp": 2894.76,
+                "text": "It's kind of the same as the cross correlation idea we had before, right? So these weights here define however our kernel was defined."
+            },
+            {
+                "start_timestamp": 2894.76,
+                "end_timestamp": 2915.76,
+                "text": "And in fact, really convolution and correlation are very similar. The equation for the equation for convolution and correlation, therefore, essential operations in image processing, signal processing in general, convolution in both flipping the kernel before performing the element wise multiplication and disomming up."
+            },
+            {
+                "start_timestamp": 2915.76,
+                "end_timestamp": 2934.76,
+                "text": "Whereas correlation does not flip it. So in other words, convolution, we take the mirror image of the kernel across the central point before sliding across image in correlation kernel is slid across the images is without any flipping. You might be wondering why this flipping is even necessary in convolution, well, the flipping is a mathematical convenience."
+            },
+            {
+                "start_timestamp": 2934.76,
+                "end_timestamp": 2948.76,
+                "text": "And this particularly useful when you're dealing with systems defined by differential equations, also signals, if you think about them, how you integrate, for example, how you sum up things in a continuous way, then it's difficult to do it from the other side."
+            },
+            {
+                "start_timestamp": 2948.76,
+                "end_timestamp": 2958.76,
+                "text": "So so correlation can be used equally well. convolution is is an equally valid operation however in neural networks, especially in CNN's."
+            },
+            {
+                "start_timestamp": 2958.76,
+                "end_timestamp": 2987.76,
+                "text": "The difference between convolution and correlation is often not very critical. That's really because the weights of these kernels, so these shared weights, they are learned from data whether flipped or not, if you flip them and have something pretty fine like our previously known operator, so you want to preserve your convenient mass for convolution where everything works out to be nice. For example, if you want to do say for your transforms and really do signal analysis as well, then you need to flip but in reality, if you just learn a feature extracted and met if you flip or not because your weights are anyway learned."
+            },
+            {
+                "start_timestamp": 2987.76,
+                "end_timestamp": 3002.76,
+                "text": "So in practice, many deep learning libraries actually implement correlation and just called convolution is a mix between the mathematical niceties of convolution and also convention."
+            },
+            {
+                "start_timestamp": 3002.76,
+                "end_timestamp": 3021.76,
+                "text": "The key take a base with both operations are really closely related and serve the same overarching course local pattern detection through shared rates. Understanding the difference is still quite interesting because the convolution itself and its mathematical properties have quite some advantages."
+            }
+        ]
+    },
+    {
+        "segment_number": 8,
+        "segment_title": "Convolutional Layer Design and Computational Efficiency",
+        "segment_start_timestamp": 3002.76,
+        "segment_end_timestamp": 4527.76,
+        "transcript": [
+            {
+                "start_timestamp": 3002.76,
+                "end_timestamp": 3021.76,
+                "text": "The key take a base with both operations are really closely related and serve the same overarching course local pattern detection through shared rates. Understanding the difference is still quite interesting because the convolution itself and its mathematical properties have quite some advantages."
+            },
+            {
+                "start_timestamp": 3021.76,
+                "end_timestamp": 3037.76,
+                "text": "If you look at this great version of convolution, the essential operation in convolution neural networks as we implement them, the so we are just summing over all possible shifts from negative infinity to positive infinity."
+            },
+            {
+                "start_timestamp": 3037.76,
+                "end_timestamp": 3054.76,
+                "text": "So in practice, the RS, UT and WT are of course finite and for values not defined, we assume just them to be zero. So practically speaking to some only includes the overlapping elements of two errors, errors."
+            },
+            {
+                "start_timestamp": 3054.76,
+                "end_timestamp": 3073.76,
+                "text": "So in essence, we measure the similarity between UT and WT at each point T, and we slide it over this concept of discrete convolution through the backpons of our scene. Now I still would recommend you to look into how convolution works because there are two schools of thoughts here."
+            },
+            {
+                "start_timestamp": 3073.76,
+                "end_timestamp": 3085.76,
+                "text": "So this is just a operation between two functions where you slide one function over the other function, multiply them with each other and then integrate some up the result, which is the essence and signals of filtering."
+            },
+            {
+                "start_timestamp": 3085.76,
+                "end_timestamp": 3095.76,
+                "text": "Now if I want to smooth an image or if I want to get rid of noise in an audio signal and so on, this is the essence of filtering in signal theory."
+            },
+            {
+                "start_timestamp": 3095.76,
+                "end_timestamp": 3124.76,
+                "text": "The other interesting part is why did this actually, why did this extra transition into feature extractors like correlation networks, convolution networks, I would recommend you to have, to have a look at these two YouTube videos I posted here where the convolution is very nicely correlated to probability theory and Gaussian sampling and very flipping is actually explained how you can, how you can get all possible combinations."
+            },
+            {
+                "start_timestamp": 3124.76,
+                "end_timestamp": 3135.76,
+                "text": "The probability is of all possible combinations of features by just flipping around one part of your inputs or your curl and then sliding it over over your input."
+            },
+            {
+                "start_timestamp": 3135.76,
+                "end_timestamp": 3152.76,
+                "text": "That is, would be very difficult with correlation alone, but that correlation really leads to the backbone, the mathematical backbone of convolutional networks because at the end of the day what you would, what you would, ideally like to predict this, the probability of an input belonging to a class."
+            },
+            {
+                "start_timestamp": 3153.76,
+                "end_timestamp": 3166.76,
+                "text": "And that's where convolution were really, really useful in the mathematics backbone in practice, correlation is learned, but the convolution gives you an overarching idea of the signals that come in and go out."
+            },
+            {
+                "start_timestamp": 3166.76,
+                "end_timestamp": 3179.76,
+                "text": "Now what are the properties of convolution is just the operation between two functions, their community, associative distribution rules, and the associative scalar functions."
+            },
+            {
+                "start_timestamp": 3180.76,
+                "end_timestamp": 3189.76,
+                "text": "Now, why convolution again, historical reasons, the flip kernels, please watch the videos, they're very interesting, it's additional material."
+            },
+            {
+                "start_timestamp": 3189.76,
+                "end_timestamp": 3208.76,
+                "text": "Cross correlation, correlation is usually implemented and learned, but it's such a powerful tool that you can have with CNNs and with weight sharing and many, many filters, which you will talk in them in a couple of slides, about which we will talk in a couple of slides, you can really construct this hierarchical feature in extraction through."
+            },
+            {
+                "start_timestamp": 3208.76,
+                "end_timestamp": 3211.76,
+                "text": "Through these very basic ideas."
+            },
+            {
+                "start_timestamp": 3211.76,
+                "end_timestamp": 3224.76,
+                "text": "Now here a few filters from 2D image analysis, like if you want to do edge detection, you can define a filter kernel like this, then the output will be just edges, and this is what I meant also with."
+            },
+            {
+                "start_timestamp": 3224.76,
+                "end_timestamp": 3232.76,
+                "text": "With filtering operations, this is where they came from, if you do sharpening the image, Gaussian blur, you can do all sorts of operations here."
+            },
+            {
+                "start_timestamp": 3232.76,
+                "end_timestamp": 3241.76,
+                "text": "The big difference in CNNs is that these filtering operations, in CNNs, are now learned through backpropagation, all of these weights are learned through backpropagation, and we have many of these filters."
+            },
+            {
+                "start_timestamp": 3241.76,
+                "end_timestamp": 3249.76,
+                "text": "Each filter is responsible to react specifically to one specific feature and then the subsequent layers to feature of feature combinations."
+            },
+            {
+                "start_timestamp": 3250.76,
+                "end_timestamp": 3273.76,
+                "text": "So now let's get to how to actually build convolutional neural networks with not only modern tools, but also conceptually now for practical reasons, but also to explore how data distributions actually behave."
+            },
+            {
+                "start_timestamp": 3274.76,
+                "end_timestamp": 3285.76,
+                "text": "So we'll discuss a couple of things right now, and then across the lecture a few other things, we'll start with the most important part, which are convolutional layers."
+            },
+            {
+                "start_timestamp": 3285.76,
+                "end_timestamp": 3292.76,
+                "text": "This is really hard to see in CNNs where filters are currently slide across the input to produce feature maps."
+            },
+            {
+                "start_timestamp": 3292.76,
+                "end_timestamp": 3302.76,
+                "text": "Activation functions, we'll talk about those little later pooling layers as an essentially building block, they are all conception, not very difficult."
+            },
+            {
+                "start_timestamp": 3303.76,
+                "end_timestamp": 3312.76,
+                "text": "To understand there are some tricks you can use to make them more efficient, but the key is in how all of these things come together."
+            },
+            {
+                "start_timestamp": 3312.76,
+                "end_timestamp": 3326.76,
+                "text": "For the connected layers, flattened layers will discuss in a couple of slides, you can use dropout to regularize what is actually learned to make it harder to learn so things generalize better, but normalization will discuss in a few slides."
+            },
+            {
+                "start_timestamp": 3327.76,
+                "end_timestamp": 3332.76,
+                "text": "And how to actually design the output of such networks."
+            },
+            {
+                "start_timestamp": 3332.76,
+                "end_timestamp": 3346.76,
+                "text": "Now before we start, let's think about the input tensor again of convention neural networks, if we compare them new to neural networks, it might become very clear how locality, especially locality is implemented in CNNs."
+            },
+            {
+                "start_timestamp": 3347.76,
+                "end_timestamp": 3361.76,
+                "text": "So, at a particular neural network, you'll take the input with dimensions x, y, c for say, how to be channels and simply flatten for number of RGB channels so that might be x, y, c dimension with c, the RGB and x, y, the image."
+            },
+            {
+                "start_timestamp": 3361.76,
+                "end_timestamp": 3368.76,
+                "text": "And for convention neural network, we simply flatten it into a long vector of size x, y, c times one."
+            },
+            {
+                "start_timestamp": 3368.76,
+                "end_timestamp": 3374.76,
+                "text": "So this is the shape of our input, this would then feed into the network for classification into say c classes."
+            },
+            {
+                "start_timestamp": 3375.76,
+                "end_timestamp": 3382.76,
+                "text": "How about we have set this price about image data and this approach is quite a sub optimal."
+            },
+            {
+                "start_timestamp": 3382.76,
+                "end_timestamp": 3392.76,
+                "text": "So what we mean by this is again shift in variance, if you shift an object, the intrinsic characteristics of the objects don't really change, but here they would go all over the place in this Monday vector."
+            },
+            {
+                "start_timestamp": 3393.76,
+                "end_timestamp": 3415.76,
+                "text": "So for locality, in the image data, the relevant information for making a decision usually lies close, but that's not necessarily the case if you flatten out your entire vector, some pieces might just go on completely the other side, if you flatten an image into a one dimensional vector, say RGB value, RGB value RGB value RGB value, there's nothing is actually quite connected."
+            },
+            {
+                "start_timestamp": 3415.76,
+                "end_timestamp": 3423.76,
+                "text": "And this locality is in a fully connected network, not naturally accounted for, but in CNNs it is."
+            },
+            {
+                "start_timestamp": 3423.76,
+                "end_timestamp": 3436.76,
+                "text": "So how do CNNs do it? Well, just by keeping the locality, of course, just by keeping the input size, you notice that we have your graphical representation showing an input layer with dimensions x, y and that c."
+            },
+            {
+                "start_timestamp": 3436.76,
+                "end_timestamp": 3441.76,
+                "text": "And again, the number of colors or that can be number of channels, however you define them."
+            },
+            {
+                "start_timestamp": 3441.76,
+                "end_timestamp": 3445.76,
+                "text": "And I filter kernel of dimension i jk."
+            },
+            {
+                "start_timestamp": 3445.76,
+                "end_timestamp": 3446.76,
+                "text": "Okay."
+            },
+            {
+                "start_timestamp": 3446.76,
+                "end_timestamp": 3449.76,
+                "text": "And between them, we make a convolution."
+            },
+            {
+                "start_timestamp": 3449.76,
+                "end_timestamp": 3451.76,
+                "text": "You can implement this convolution as ever you like."
+            },
+            {
+                "start_timestamp": 3451.76,
+                "end_timestamp": 3464.76,
+                "text": "You can either do the sliding window or if that kernel is quite large, then it would maybe pay off to make a Fourier transform or just as many of the deep learning libraries to implement correlation, yeah, they were not the other way."
+            },
+            {
+                "start_timestamp": 3465.76,
+                "end_timestamp": 3480.76,
+                "text": "So, but what does this mean for our principles for locality principle instead of flattening the input into one director, as in conventional networks, will see and maintain the original structure of the image as a 3d tensor of dimensions x, y, c."
+            },
+            {
+                "start_timestamp": 3481.76,
+                "end_timestamp": 3487.76,
+                "text": "So we call these objects tensors since they behave like matrices."
+            },
+            {
+                "start_timestamp": 3487.76,
+                "end_timestamp": 3494.76,
+                "text": "So this helps us really to keep the spatial relationship in the input and the kernel intact."
+            },
+            {
+                "start_timestamp": 3494.76,
+                "end_timestamp": 3506.76,
+                "text": "The 3d tensor is then convolved with the smaller kernel and the idea is really the small kernel slides of the 3d input the one or the other way, preserving the local spatial relationships in the image pretty much to us we did it in this lighting window example."
+            },
+            {
+                "start_timestamp": 3507.76,
+                "end_timestamp": 3525.76,
+                "text": "So, in practice, convolution is often implement as a series of dot products, we just take a patch of the input image, which matches the size of our kernel and then perform the dot product between these between the patch and the kernel."
+            },
+            {
+                "start_timestamp": 3525.76,
+                "end_timestamp": 3535.76,
+                "text": "The dot product is essentially a weighted sum of the pixel values in the impunity image, where the weights are determined by the kernel and these weights in the kernel are what is learned."
+            },
+            {
+                "start_timestamp": 3536.76,
+                "end_timestamp": 3547.76,
+                "text": "And the output of each of these dot products forms a single pixel in the resulting feature map, right? We do this dot products, light it over every single location and then the output is a pixel in the feature map."
+            },
+            {
+                "start_timestamp": 3547.76,
+                "end_timestamp": 3554.76,
+                "text": "So by doing this, we capture it in the local spatial free features from each region in the input image and compile them into feature map."
+            },
+            {
+                "start_timestamp": 3554.76,
+                "end_timestamp": 3562.76,
+                "text": "If that region is very similar to that kernel, there will be high activation, if not, there will be low activation."
+            },
+            {
+                "start_timestamp": 3562.76,
+                "end_timestamp": 3579.76,
+                "text": "And this method is really highly effective and this one of the reasons why CNNs are so efficient for this sort of task, it just adheres to the principle of translation invariants and locality, capturing spatial features, which significantly reduces the number of parameters, because all you need to learn here is the number of weights in this kernel."
+            },
+            {
+                "start_timestamp": 3579.76,
+                "end_timestamp": 3594.76,
+                "text": "I times J times K, this is what you need to learn for this one single layer and then again, the fifth is your feature activation map and the resulting output after this convolution will be a little bit smaller."
+            },
+            {
+                "start_timestamp": 3594.76,
+                "end_timestamp": 3605.76,
+                "text": "So why are the dimensions of the output reduced well as we slide the kernel across the image and perform dot products, we're essentially aggregating information from the original pixels into new condensed values, right?"
+            },
+            {
+                "start_timestamp": 3605.76,
+                "end_timestamp": 3617.76,
+                "text": "And the kernel size really determines how many pixels are aggregated into each new value, which, which really defines the output, which really defines the size of the output."
+            },
+            {
+                "start_timestamp": 3617.76,
+                "end_timestamp": 3631.76,
+                "text": "So this reduction dimensionality is not always a bad thing, it can actually be quite useful reducing the computation load for future layers that follow this one and can also help abstracting the higher level features in this image."
+            },
+            {
+                "start_timestamp": 3631.76,
+                "end_timestamp": 3636.76,
+                "text": "Remember, the primary idea is to slide this filter over the locations in the input image to produce a feature map."
+            },
+            {
+                "start_timestamp": 3636.76,
+                "end_timestamp": 3644.76,
+                "text": "And so, of course, you can't go outside, so you basically output size will be defined by half will be smaller by that kernel size."
+            },
+            {
+                "start_timestamp": 3644.76,
+                "end_timestamp": 3658.76,
+                "text": "So, and you eat off the boundaries basically with that kernel in this aggregation process, which is not necessarily a bad thing."
+            },
+            {
+                "start_timestamp": 3658.76,
+                "end_timestamp": 3666.76,
+                "text": "Now, if it is a bad thing for you, then you probably can fix this issue by just doing zero padding."
+            },
+            {
+                "start_timestamp": 3666.76,
+                "end_timestamp": 3675.76,
+                "text": "If you add hypothetical zeros around it, so if you're outside of the input tensor and run with your kernel over it, then you can assume that there are zeros."
+            },
+            {
+                "start_timestamp": 3675.76,
+                "end_timestamp": 3687.76,
+                "text": "So you add just I and J half cross, if you would not pad, but that's since the dot product, if you have a 3D and 3D tensor, convolved with which other things, the dot product will anyway collapse the dimensions in this case here into one value."
+            },
+            {
+                "start_timestamp": 3688.76,
+                "end_timestamp": 3711.76,
+                "text": "So, your pad and the zeros around this will preserve the input activation that's sometimes important, not always if you want to reduce your dimensionality and say a classification program, then it's not too bad to actually accept that you with every layer you eat off half of your kernel size from each of the sides of your input tensor."
+            },
+            {
+                "start_timestamp": 3711.76,
+                "end_timestamp": 3727.76,
+                "text": "Now, why would you do zero padding? Well, of course, if you eat off in every step, half of your kernel size from each of the boundaries, you're limited with how many convolutional layers you can stack at some point you'll end up in an in an input tensor that is smaller than the kernel you want to learn and then this cannot work anymore."
+            },
+            {
+                "start_timestamp": 3727.76,
+                "end_timestamp": 3751.76,
+                "text": "So, if you want to get deeper, but preserve a little bit of your of your boundary, then you might also take zero padding, but that's that's the main reason why probably people do a zero padding to add more layers to actually control how the output size will be shaped for the following layers, it's not so much to preserve to preserve the size across the entire network."
+            },
+            {
+                "start_timestamp": 3751.76,
+                "end_timestamp": 3765.76,
+                "text": "Now, of course, you're not only just learning one filter per layer, you would usually learn quite a number of layers and each of these learned kernels now produce its own its own activation map."
+            },
+            {
+                "start_timestamp": 3765.76,
+                "end_timestamp": 3785.76,
+                "text": "So, each of them has probably a specific task finding eyes or edges or smoothing or whatsoever, but they are entirely learned, so we don't really care what's inside of these, but they all will produce more layers and then you end up again with several activation maps, which are a number of channels if you put them together."
+            },
+            {
+                "start_timestamp": 3785.76,
+                "end_timestamp": 3795.76,
+                "text": "So, you get another kind of shaped tensor in your convolutional neural network, which is then which you can pass this through following layers."
+            },
+            {
+                "start_timestamp": 3795.76,
+                "end_timestamp": 3810.76,
+                "text": "So, it's at its core, CNN is essentially a sequence of convolutional layers and I haven't mentioned that it's each of these layers is of course followed by an activation function, otherwise everything will collapse into linearity and you could actually go back to have one single linear approximation."
+            },
+            {
+                "start_timestamp": 3810.76,
+                "end_timestamp": 3816.76,
+                "text": "So, you're introduced in non-linearity by your activation functions in a sequence of convolutional layers."
+            },
+            {
+                "start_timestamp": 3816.76,
+                "end_timestamp": 3829.76,
+                "text": "So, by the sequence important convolutional layers are responsible for feature extraction, so they take the raw data and produce a set of feature maps that highlight various aspects of the data and then later layers highlight feature or feature combinations."
+            },
+            {
+                "start_timestamp": 3829.76,
+                "end_timestamp": 3838.76,
+                "text": "So, this is becoming very abstract, very difficult to interpret for humans, but the later the layers, the more kind of abstract your features will get."
+            },
+            {
+                "start_timestamp": 3839.76,
+                "end_timestamp": 3858.76,
+                "text": "The activation functions very often are rectified linear unit, but which we talked in a couple of slides, the role of activation functions is really to introduce the non-linearity into the network without non-linearity the network would not be able to capture complex relationships and patterns in the data and everything actually would become equivalent to a linear transformation."
+            },
+            {
+                "start_timestamp": 3859.76,
+                "end_timestamp": 3871.76,
+                "text": "So, as we move through the layers in the scene and the dimensions of the intermediate tensors often change, for example, you may start with an input image that has dimension height with some color challenge channels."
+            },
+            {
+                "start_timestamp": 3871.76,
+                "end_timestamp": 3879.76,
+                "text": "And as we progress through the layers, the dimensions may reduce or expand dependent on the operations being actually performed."
+            },
+            {
+                "start_timestamp": 3879.76,
+                "end_timestamp": 3895.76,
+                "text": "Remember, each layer in the network is learning to recognize increasingly complex features. Early layers might capture simple patterns like edges and consents on by deeper layers might recognize more abstract features, features like the shape of a nose or contour of a cat's ear or eyes."
+            },
+            {
+                "start_timestamp": 3896.76,
+                "end_timestamp": 3908.76,
+                "text": "Now, each filter in the convolution layer is defined by its dimensions, which for our purpose here, I noted previously as i j and k."
+            },
+            {
+                "start_timestamp": 3908.76,
+                "end_timestamp": 3915.76,
+                "text": "So, for a single filter, the total number of parameters is i multiplied by j multiplied by k."
+            },
+            {
+                "start_timestamp": 3916.76,
+                "end_timestamp": 3928.76,
+                "text": "But we're not quite done yet. There's one more parameter, the bias term. So, adding the bias term, we have i times j times k plus one parameter for each filter in a convolutional layer."
+            },
+            {
+                "start_timestamp": 3928.76,
+                "end_timestamp": 3936.76,
+                "text": "The bias term is crucial because it allows the filter to have some flexibility effectively shifting the activation function to better fit the data."
+            },
+            {
+                "start_timestamp": 3937.76,
+                "end_timestamp": 3947.76,
+                "text": "So, to give you a sense of scale, imagine you have a simple three by three by three filter. That's 27 weight parameters plus one bias totaling 28 parameters for this filter."
+            },
+            {
+                "start_timestamp": 3947.76,
+                "end_timestamp": 3961.76,
+                "text": "When you scale this to multiple filters and layers, the number of parameters can grow quite large. But remember, this is often still much fewer than what you find in a fully connected network for pretty much the same task."
+            },
+            {
+                "start_timestamp": 3961.76,
+                "end_timestamp": 3978.76,
+                "text": "So, this is all you need to calculate the number of learned parameters. There are some sometimes exam questions in this direction. How many parameters do you need to learn in this CNN or how many operations do you need to perform this independence, of course, also on the input tensor, if you're syrup heading or not."
+            },
+            {
+                "start_timestamp": 3978.76,
+                "end_timestamp": 3990.76,
+                "text": "But this is all you need to do to really figure out how, how computational complex your network is and if it's still feasible to probably run through your iPhones, newer processor."
+            },
+            {
+                "start_timestamp": 3991.76,
+                "end_timestamp": 4002.76,
+                "text": "Now, one more thing, there is something known as a one by one convolution and at the first glance, it might may seem almost trivial. A single value is multiplied by a single value weight and a bias is added."
+            },
+            {
+                "start_timestamp": 4002.76,
+                "end_timestamp": 4019.76,
+                "text": "But its application is far more from trivial. So, the main utility of a one by one convolution is to reduce the depth of our network. Think of it as a way to perform dimensionality reduction across C across the depth of the feature map or the input tensor or the feature tensor."
+            },
+            {
+                "start_timestamp": 4019.76,
+                "end_timestamp": 4029.76,
+                "text": "But we have a high number of channels in our input volume or one by one convolution can effectively condense that information. It's essentially a dot product operation across the depth of the input volume."
+            },
+            {
+                "start_timestamp": 4029.76,
+                "end_timestamp": 4041.76,
+                "text": "And as with regular convolution, this one by one convolution slide over all the locations in the input. So, in a nutshell, one by one convolution is allow the network to learn how to aggregate many channels into fewer channels."
+            },
+            {
+                "start_timestamp": 4041.76,
+                "end_timestamp": 4047.76,
+                "text": "And thereby really reducing the computation complexity while maintaining all the important features."
+            },
+            {
+                "start_timestamp": 4047.76,
+                "end_timestamp": 4068.76,
+                "text": "There is a neat trick that has a big impact on the efficiency and performance of convolutional networks. You can also think of them as tiny, small, fully connected networks that you learn for each of the channels, depth and decide how to actually combine all of the feature maps into another activation map."
+            },
+            {
+                "start_timestamp": 4069.76,
+                "end_timestamp": 4080.76,
+                "text": "So, another thing to consider is how do we actually move our kernel across the tensors and their two important concepts, padding and strides."
+            },
+            {
+                "start_timestamp": 4080.76,
+                "end_timestamp": 4086.76,
+                "text": "So, let's first talk about strides. Strides refer to the step size that the filter takes as it slides across the input image."
+            },
+            {
+                "start_timestamp": 4086.76,
+                "end_timestamp": 4092.76,
+                "text": "A slide of one means the filter moves one pixel at a time, which is the most straightforward case. This is what we discussed at this point."
+            },
+            {
+                "start_timestamp": 4092.76,
+                "end_timestamp": 4101.76,
+                "text": "And as you can see in the example image with a 7 by 7 input in a 3 by 3 filter stride of one gives us a 5 by 5 output."
+            },
+            {
+                "start_timestamp": 4101.76,
+                "end_timestamp": 4111.76,
+                "text": "However, have a larger stride like two, if you move a little bit more, a larger stride like two would mean the filter jumps two pixels at a time."
+            },
+            {
+                "start_timestamp": 4111.76,
+                "end_timestamp": 4124.76,
+                "text": "Now, our example, this reduces the output then to a 3 by 3 image. Strides are really mainly used to reduce the spatial dimensions of the output volume, which in turn reduces the amount of parameters and computations in network."
+            },
+            {
+                "start_timestamp": 4124.76,
+                "end_timestamp": 4136.76,
+                "text": "But you're dismissing some of your input, right? So, you're skipping, say, with a stride of two every second input, you're only aggregating it from your kernel."
+            },
+            {
+                "start_timestamp": 4136.76,
+                "end_timestamp": 4146.76,
+                "text": "So, padding is the technique we already discussed of adding extra pixels around the input image. In this example, we're using no padding, meaning we are not adding any pixels around our 7 by 7 input."
+            },
+            {
+                "start_timestamp": 4146.76,
+                "end_timestamp": 4154.76,
+                "text": "The primary purpose of padding is to control the spatial size of the output volumes, mostly to preserve the spatial dimensions of the input volumes that they match."
+            },
+            {
+                "start_timestamp": 4154.76,
+                "end_timestamp": 4167.76,
+                "text": "So, these two parameters stride and padding give us really fine grain control or the architecture of our scene and allow us to manage the computation load and those are the depth and how far we can go with the feature extraction and everything very effectively."
+            },
+            {
+                "start_timestamp": 4167.76,
+                "end_timestamp": 4177.76,
+                "text": "So, this parameters, if you understand how to work, will really allow you to understand all the error messages you might get when you implement something like that and say the shape of this tensor doesn't match the shape of the other tensor and so on."
+            },
+            {
+                "start_timestamp": 4177.76,
+                "end_timestamp": 4189.76,
+                "text": "This is really what it means how you need to really, really be on top of your tensor shapes when you're implementing your convolutional neural networks."
+            },
+            {
+                "start_timestamp": 4189.76,
+                "end_timestamp": 4198.76,
+                "text": "Yeah, right. So, this is 7 by 7, which is also 5 by 5, stride 2, result in a 3 by 3."
+            },
+            {
+                "start_timestamp": 4198.76,
+                "end_timestamp": 4210.76,
+                "text": "Now, let's talk a little bit more about the computational complexity if you want to figure out the visibility of computing network or maybe if it's still suitable to do predictions in real time, say on your smartphone."
+            },
+            {
+                "start_timestamp": 4210.76,
+                "end_timestamp": 4218.76,
+                "text": "Let's assume this. Let's assume a 5 by 5 convolution with a single filter will involve 25 multiplied at operations, pay input element."
+            },
+            {
+                "start_timestamp": 4218.76,
+                "end_timestamp": 4231.76,
+                "text": "If we instead use two consecutive 3 by 3 convolutions, the first 3 by 3 convolution requires 9 operations pay input and the second 3 by 3 convolution also requires 9 operations at the output of the first operation."
+            },
+            {
+                "start_timestamp": 4231.76,
+                "end_timestamp": 4241.76,
+                "text": "Right. So, there's something interesting about that even though 9 plus 9 is 18, which is less than 25, the real computation savings can be even greater in practice."
+            },
+            {
+                "start_timestamp": 4242.76,
+                "end_timestamp": 4250.76,
+                "text": "That's because the first 3 by 3 convolution generates a smaller output size compared to the original input and the second 3 by 3 convolution works on this reduced size output, right."
+            },
+            {
+                "start_timestamp": 4250.76,
+                "end_timestamp": 4259.76,
+                "text": "This approach offers a way to increase computational efficiency and also introduces an additional nonlinearity by having two activation functions instead of only one."
+            },
+            {
+                "start_timestamp": 4259.76,
+                "end_timestamp": 4268.76,
+                "text": "This can, this can help the model to capture more complex functions, but factorizing a 5 by 5 into 2, 3 by 3 convolution is just one example how you can optimize the architecture."
+            },
+            {
+                "start_timestamp": 4269.76,
+                "end_timestamp": 4278.76,
+                "text": "It's just an approximation and you won't learn exactly the same thing, but you have a way to make smaller constant less operations here."
+            },
+            {
+                "start_timestamp": 4278.76,
+                "end_timestamp": 4283.76,
+                "text": "So, this is the number of operations we have for a 5 by 5 filter operation."
+            },
+            {
+                "start_timestamp": 4283.76,
+                "end_timestamp": 4291.76,
+                "text": "And if we factor them out into 3 by 3, so we can can actually do this less parameters to learn, but we can."
+            },
+            {
+                "start_timestamp": 4291.76,
+                "end_timestamp": 4299.76,
+                "text": "We can split them up into 3 by 3 into approximation just 100, 36 K, 176 K operations, 136 K."
+            },
+            {
+                "start_timestamp": 4299.76,
+                "end_timestamp": 4308.76,
+                "text": "So, at the end of the day, we end up with significantly less operations and factorized convolution."
+            },
+            {
+                "start_timestamp": 4308.76,
+                "end_timestamp": 4316.76,
+                "text": "There's also a way if you're familiar with signal processing, you know that certain filters can be separated into 2 and by 1, 1 by n operations."
+            },
+            {
+                "start_timestamp": 4317.76,
+                "end_timestamp": 4321.76,
+                "text": "So, like Gaussian filter can be separated, for example, you can also assume similar things here."
+            },
+            {
+                "start_timestamp": 4321.76,
+                "end_timestamp": 4339.76,
+                "text": "So, instead of filtering factorizing 3 by 3 and 3 by 3, you could say, okay, I'm composed now 5 by 1 with 1 by 5 filter, 1 after each other and separate convolution is really also reduced to aim to reduce the computation burden of one big convolution."
+            },
+            {
+                "start_timestamp": 4340.76,
+                "end_timestamp": 4357.76,
+                "text": "So, if you break things down like this to gain computational efficiency, like in this example here, you have only 5 parameters for the first convolution on 5 for the second, which means you end up with just 10 parameters you need to learn."
+            },
+            {
+                "start_timestamp": 4357.76,
+                "end_timestamp": 4363.76,
+                "text": "This effectively reduces the computation cost, but, but also the number of learnable parameters."
+            },
+            {
+                "start_timestamp": 4363.76,
+                "end_timestamp": 4372.76,
+                "text": "This is also just an approximation technique. The catch is that it works well only if the original 5 by 5 filter can be accurately approximated by 2 smaller filters."
+            },
+            {
+                "start_timestamp": 4372.76,
+                "end_timestamp": 4383.76,
+                "text": "In some cases, this approximation might lead to a loss of information or really representational power, but in practice, the efficiency gain often outweigh drawbacks, it really depends on your application."
+            },
+            {
+                "start_timestamp": 4383.76,
+                "end_timestamp": 4391.76,
+                "text": "So, separate convolution is author way to make your network more efficient, but at the cost of probably less representational power."
+            },
+            {
+                "start_timestamp": 4391.76,
+                "end_timestamp": 4398.76,
+                "text": "It's really a trade-off that makes sense when computational resources are concerned."
+            },
+            {
+                "start_timestamp": 4398.76,
+                "end_timestamp": 4405.76,
+                "text": "Now, another important concept to dimensionality reduction in CNNs is the concept of pooling."
+            },
+            {
+                "start_timestamp": 4406.76,
+                "end_timestamp": 4417.76,
+                "text": "Now, pooling at its core serves two main purposes. It performs a kind of aggregation, and it also downshambers the image of each other."
+            },
+            {
+                "start_timestamp": 4417.76,
+                "end_timestamp": 4427.76,
+                "text": "So, this is also a very often referred to as permutation invariant aggregation. Essentially, the order in which the pixels appear in the window doesn't really affect the outcome of the pooling operation."
+            },
+            {
+                "start_timestamp": 4427.76,
+                "end_timestamp": 4433.76,
+                "text": "This is really what contributes to its property of local translation invariants or shift invariants."
+            },
+            {
+                "start_timestamp": 4433.76,
+                "end_timestamp": 4443.76,
+                "text": "Really regardless of minor shifts, and we're not talking really huge shifts here, but regardless of minor shifts or deformations in the input image, the pooling operation really remains largely unaffected."
+            },
+            {
+                "start_timestamp": 4445.76,
+                "end_timestamp": 4453.76,
+                "text": "The most commonly used method for pooling is max pooling. So, max pooling, the examiner block a grid of pixels and select the maximum value across them."
+            },
+            {
+                "start_timestamp": 4454.76,
+                "end_timestamp": 4464.76,
+                "text": "Simply as that. We choose a block and say where is the maximum, and the maximum here is six, so we enter into the output six."
+            },
+            {
+                "start_timestamp": 4464.76,
+                "end_timestamp": 4468.76,
+                "text": "Nothing more than that. This is just what pooling means."
+            },
+            {
+                "start_timestamp": 4468.76,
+                "end_timestamp": 4474.76,
+                "text": "You could also do average pooling, mean pooling, but max pooling is really one of the most common ones."
+            },
+            {
+                "start_timestamp": 4475.76,
+                "end_timestamp": 4486.76,
+                "text": "Really what it does is it reduces resolution, hierarchical features as we progress through the layers pooling helps with the network to concentrate on increasing the abstract features."
+            },
+            {
+                "start_timestamp": 4486.76,
+                "end_timestamp": 4494.76,
+                "text": "And it is to some degree shift and deformation invariant pooling really contributes to the networks robustness against small shifts and deformation of the input."
+            },
+            {
+                "start_timestamp": 4494.76,
+                "end_timestamp": 4503.76,
+                "text": "So, if we go through this example here, here the output is eight, and this block the output is five, and this block the output should be four, right."
+            },
+            {
+                "start_timestamp": 4503.76,
+                "end_timestamp": 4506.76,
+                "text": "So, this is our output of our pooling."
+            },
+            {
+                "start_timestamp": 4506.76,
+                "end_timestamp": 4514.76,
+                "text": "No magic here. It's really just used to get quicker down with your dimensions and still retain a lot of information."
+            },
+            {
+                "start_timestamp": 4514.76,
+                "end_timestamp": 4519.76,
+                "text": "Pooling, important pooling is usually applied to each channel separately."
+            },
+            {
+                "start_timestamp": 4519.76,
+                "end_timestamp": 4527.76,
+                "text": "So, you would pool each channel separately and not do something like a volumetric pooling, but you can of course free to implement something like that and also to"
+            },
+            {
+                "start_timestamp": 4527.76,
+                "end_timestamp": 4535.76,
+                "text": "depth reduction in that place. I would rather use one by one, a convolution to reduce depth, and then maybe if you need pooling to pull down"
+            }
+        ]
+    },
+    {
+        "segment_number": 9,
+        "segment_title": "Shift Invariance and Aliasing in CNNs",
+        "segment_start_timestamp": 4536.76,
+        "segment_end_timestamp": 4729.76,
+        "transcript": [
+            {
+                "start_timestamp": 4536.76,
+                "end_timestamp": 4540.76,
+                "text": "to pool this to pool down each channel separately."
+            },
+            {
+                "start_timestamp": 4540.76,
+                "end_timestamp": 4547.76,
+                "text": "So, while pooling is a prevalent approach to down sampling and gfing translation invariance, it's not really the only one, the only approach that can be used."
+            },
+            {
+                "start_timestamp": 4547.76,
+                "end_timestamp": 4557.76,
+                "text": "You can just use bigger convolutions and to go down very quickly with your dimensionality as well, like strides pooling strides are probably quite similar in what they're doing."
+            },
+            {
+                "start_timestamp": 4557.76,
+                "end_timestamp": 4565.76,
+                "text": "Here I have another example of what aque variance and invariance in practical networks look like."
+            },
+            {
+                "start_timestamp": 4565.76,
+                "end_timestamp": 4575.76,
+                "text": "So, this is an example from the MNIST database. There's something many of you might have heard already about, but this is a kind of simple toy dataset that is often used to play around with neural networks and CNNs and so on."
+            },
+            {
+                "start_timestamp": 4575.76,
+                "end_timestamp": 4587.76,
+                "text": "It's handwritten numbers that are different and scanned from the 90s. We'll talk about them a little bit more, but this is just one of these digits."
+            },
+            {
+                "start_timestamp": 4587.76,
+                "end_timestamp": 4598.76,
+                "text": "So, if I convolve this image with this filter kernel, then the output looks like this and the output of this convolution layer is to some degree shifting variance."
+            },
+            {
+                "start_timestamp": 4598.76,
+                "end_timestamp": 4613.76,
+                "text": "If I move this a little bit, then you see that the kernel, so the colors here and the features that are extracted don't really change, but the output changes equally to how the input changes."
+            },
+            {
+                "start_timestamp": 4613.76,
+                "end_timestamp": 4627.76,
+                "text": "Now, pooling introduces some shift invariance. So, if I have this pooling layer here on top of this feature, I'm appeared and say the maximum is this red pixel here, then when I just store this one in the next layer,"
+            },
+            {
+                "start_timestamp": 4627.76,
+                "end_timestamp": 4639.76,
+                "text": "and if I move this a little bit around, then the maximum will still be the same. Well, within the limits of how far I pool, of course, but this maximum will still be invariant."
+            },
+            {
+                "start_timestamp": 4639.76,
+                "end_timestamp": 4648.76,
+                "text": "And so, the output will all be the same. No matter how much I shift the input within reason within that pooling perceptive field."
+            },
+            {
+                "start_timestamp": 4649.76,
+                "end_timestamp": 4655.76,
+                "text": "Now, it's not quite true, of course, there's a lot to it. I would recommend you to have a look at this paper."
+            },
+            {
+                "start_timestamp": 4655.76,
+                "end_timestamp": 4664.76,
+                "text": "The cruiser thing is to understand is that we are violating heavily what we know from signal processing about how to sample a function to approximate it."
+            },
+            {
+                "start_timestamp": 4664.76,
+                "end_timestamp": 4672.76,
+                "text": "This is known as the Nygris sampling theory. And the Nygris sampling theory really states that a continuous signal can be completely represented by its samples."
+            },
+            {
+                "start_timestamp": 4673.76,
+                "end_timestamp": 4678.76,
+                "text": "And fully reconstructed, if it's sampled at least twice as far as the highest frequency component."
+            },
+            {
+                "start_timestamp": 4678.76,
+                "end_timestamp": 4682.76,
+                "text": "And that's something we can clearly violate with however we set up pooling in these things."
+            },
+            {
+                "start_timestamp": 4682.76,
+                "end_timestamp": 4689.76,
+                "text": "And so, traditional pooling methods, including max pooling and stride at convolutions, they often don't adhere simply to this theorem."
+            },
+            {
+                "start_timestamp": 4689.76,
+                "end_timestamp": 4700.76,
+                "text": "So, they perform what is known as aliasing, which can really cause a loss of information and make the CNN sensitive to small shifts and translations in the inputs that are dependent on how you implement this."
+            },
+            {
+                "start_timestamp": 4700.76,
+                "end_timestamp": 4707.76,
+                "text": "Small shifts will really dramatically sometimes impact the output of your network, which is not really what you want to achieve."
+            },
+            {
+                "start_timestamp": 4707.76,
+                "end_timestamp": 4718.76,
+                "text": "So, this paper by Tsang here shows that when integrated correctly, anti-alizing techniques can coexist with traditional down sampling methods like max pooling and stride at convolutions."
+            },
+            {
+                "start_timestamp": 4718.76,
+                "end_timestamp": 4728.76,
+                "text": "This not only improves the model's accuracy and benchmarks like the image net dataset, but does enhances its generalization capabilities and making it more stable."
+            },
+            {
+                "start_timestamp": 4729.76,
+                "end_timestamp": 4739.76,
+                "text": "All of these sort of directions exist that we recommend you to sometimes have a look in these papers where a lot of these aspects are considered in detail."
+            }
+        ]
+    },
+    {
+        "segment_number": 10,
+        "segment_title": "Rotation Equivariance and Harmonic Networks",
+        "segment_start_timestamp": 4739.76,
+        "segment_end_timestamp": 4977.76,
+        "transcript": [
+            {
+                "start_timestamp": 4739.76,
+                "end_timestamp": 4746.76,
+                "text": "So, if it's not clear, if it's not completely clear what I mean by frequencies in images, please have a look at the videos."
+            },
+            {
+                "start_timestamp": 4746.76,
+                "end_timestamp": 4751.76,
+                "text": "I have linked here as there's a medium article what's meant by frequencies."
+            },
+            {
+                "start_timestamp": 4751.76,
+                "end_timestamp": 4759.76,
+                "text": "So, these are really just the gradient components, the edge components and the rate of change basically from pixel to pixel is already discrete."
+            },
+            {
+                "start_timestamp": 4759.76,
+                "end_timestamp": 4761.76,
+                "text": "So, it's already straight forward to understand."
+            },
+            {
+                "start_timestamp": 4761.76,
+                "end_timestamp": 4764.76,
+                "text": "Please have a look at this material if you're not sure what this means here."
+            },
+            {
+                "start_timestamp": 4764.76,
+                "end_timestamp": 4767.76,
+                "text": "Frequency in audio and other kind of signals."
+            },
+            {
+                "start_timestamp": 4767.76,
+                "end_timestamp": 4771.76,
+                "text": "I assume most of you had some signal processing in the past."
+            },
+            {
+                "start_timestamp": 4771.76,
+                "end_timestamp": 4773.76,
+                "text": "So, this should be quite clear."
+            },
+            {
+                "start_timestamp": 4774.76,
+                "end_timestamp": 4787.76,
+                "text": "So, another example from the paper from a sound before is really that max pooling can break shift aque variance to some degrees of the assumptions we make are very, very weak sometimes."
+            },
+            {
+                "start_timestamp": 4787.76,
+                "end_timestamp": 4794.76,
+                "text": "So, if you're seeing this input signal here, which just goes up and down and up and down and we sample it a couple of times."
+            },
+            {
+                "start_timestamp": 4794.76,
+                "end_timestamp": 4798.76,
+                "text": "And then max pool the things, so we say let's do a maximum between those."
+            },
+            {
+                "start_timestamp": 4798.76,
+                "end_timestamp": 4802.76,
+                "text": "So, this is 0 and a maximum between those."
+            },
+            {
+                "start_timestamp": 4802.76,
+                "end_timestamp": 4805.76,
+                "text": "This is 1."
+            },
+            {
+                "start_timestamp": 4807.76,
+                "end_timestamp": 4811.76,
+                "text": "And then a maximum here, which is again 0 and a maximum of 1."
+            },
+            {
+                "start_timestamp": 4811.76,
+                "end_timestamp": 4816.76,
+                "text": "Well, okay, this is a sort of reasonable approximation of that 0, 1, 0, 1 function."
+            },
+            {
+                "start_timestamp": 4816.76,
+                "end_timestamp": 4819.76,
+                "text": "That's okay, right? But I was just lucky."
+            },
+            {
+                "start_timestamp": 4819.76,
+                "end_timestamp": 4824.76,
+                "text": "The reason is because I chose to max between those between those between those."
+            },
+            {
+                "start_timestamp": 4824.76,
+                "end_timestamp": 4832.76,
+                "text": "And what if I would shift that max pool windows slightly and I would build now the max between these four and then another four and another four."
+            },
+            {
+                "start_timestamp": 4832.76,
+                "end_timestamp": 4837.76,
+                "text": "Actually, what I would end up with is complete a live sing and I under sample my function here."
+            },
+            {
+                "start_timestamp": 4837.76,
+                "end_timestamp": 4848.76,
+                "text": "And suddenly I get a function that's consistently one constantly one, which is definitely not a good approximation of this changing 0, 1, 0, 1, 0, 1 function."
+            },
+            {
+                "start_timestamp": 4848.76,
+                "end_timestamp": 4855.76,
+                "text": "So there's a big difference and the only the only change I made is a small shift in how I sample with my max pooling function."
+            },
+            {
+                "start_timestamp": 4855.76,
+                "end_timestamp": 4863.76,
+                "text": "The solution is informed by classic computer vision if you don't sample and utilizing, anti-alizing techniques, then some of these effects go away."
+            },
+            {
+                "start_timestamp": 4863.76,
+                "end_timestamp": 4876.76,
+                "text": "But do not expect that CNNs without careful design really adhere to everything we know from how to represent signals sufficiently well from signal theory."
+            },
+            {
+                "start_timestamp": 4876.76,
+                "end_timestamp": 4883.76,
+                "text": "So there's also quite interesting observations beyond shifts and equipariances."
+            },
+            {
+                "start_timestamp": 4883.76,
+                "end_timestamp": 4902.76,
+                "text": "So if you consider them to be group operations, so say rotations, for example, then we can explore things like harmonic nets, harmonic nets have been explored in the past already where specific focus has been put on rotation equipariance."
+            },
+            {
+                "start_timestamp": 4902.76,
+                "end_timestamp": 4907.76,
+                "text": "So as you can imagine rotation works a little bit differently in the group than translation alone."
+            },
+            {
+                "start_timestamp": 4907.76,
+                "end_timestamp": 4914.76,
+                "text": "So you can also watch this video translation every variance."
+            },
+            {
+                "start_timestamp": 4914.76,
+                "end_timestamp": 4919.76,
+                "text": "If we translate an input image to a CNN, then this feature will also translate with a proportional step size."
+            },
+            {
+                "start_timestamp": 4919.76,
+                "end_timestamp": 4927.76,
+                "text": "Importantly, if we place a motion compensated window around the features, then we see that the form of a translated features remains stable, independent of translation."
+            },
+            {
+                "start_timestamp": 4927.76,
+                "end_timestamp": 4933.76,
+                "text": "This property arises by design from the translational weightis structure of CNNs."
+            },
+            {
+                "start_timestamp": 4933.76,
+                "end_timestamp": 4938.76,
+                "text": "If instead we consider input rotations, then we see that the motion compensated features are not stable at all."
+            },
+            {
+                "start_timestamp": 4938.76,
+                "end_timestamp": 4945.76,
+                "text": "Moreover, it is non-trivial to infer the relationship between two feature maps which should differ only in rotate."
+            },
+            {
+                "start_timestamp": 4945.76,
+                "end_timestamp": 4948.76,
+                "text": "Right, so this is the problem that we want to solve."
+            },
+            {
+                "start_timestamp": 4948.76,
+                "end_timestamp": 4952.76,
+                "text": "Translation equipariance. If we translate an input image to a CNN."
+            },
+            {
+                "start_timestamp": 4952.76,
+                "end_timestamp": 4960.76,
+                "text": "Let's go to the solution. So if you do this with proper harmonics and explore the invariance within the internet, then..."
+            },
+            {
+                "start_timestamp": 4960.76,
+                "end_timestamp": 4966.76,
+                "text": "Returning to our motion compensated view of the feature maps, we see that indeed harmonic networks are able to preserve deep features on rotation."
+            },
+            {
+                "start_timestamp": 4966.76,
+                "end_timestamp": 4971.76,
+                "text": "Viewing the two motion compensated windows side by side, the extra stability we are granted becomes..."
+            },
+            {
+                "start_timestamp": 4971.76,
+                "end_timestamp": 4977.76,
+                "text": "So you see the features just become more stable regardless of how the input is rotated."
+            },
+            {
+                "start_timestamp": 4977.76,
+                "end_timestamp": 4986.76,
+                "text": "You don't need to learn all of these architectures, but how they are just interesting side steps to have recommendations for reading papers or watching a video."
+            }
+        ]
+    },
+    {
+        "segment_number": 11,
+        "segment_title": "Deformations and Generalization in CNNs",
+        "segment_start_timestamp": 4994.76,
+        "segment_end_timestamp": 5117.76,
+        "transcript": [
+            {
+                "start_timestamp": 4994.76,
+                "end_timestamp": 5003.76,
+                "text": "There is probably no golden path yet to one size fits all approach. It really depends on the sort of problem you are dealing with."
+            },
+            {
+                "start_timestamp": 5003.76,
+                "end_timestamp": 5010.76,
+                "text": "So far we have only talked about feature extractors. And that is fine."
+            },
+            {
+                "start_timestamp": 5010.76,
+                "end_timestamp": 5023.76,
+                "text": "So if we look at what they try to achieve in terms of echari variance, our goal is to appreciate the extent to which a CNN can be adopted to capture a variety of transformations."
+            },
+            {
+                "start_timestamp": 5023.76,
+                "end_timestamp": 5029.76,
+                "text": "What's about deformations? Imagine a canonical representation of the number three here from the MNES dataset."
+            },
+            {
+                "start_timestamp": 5029.76,
+                "end_timestamp": 5037.76,
+                "text": "Now consider all the possible ways people might write this number. Some might elongate the curve, others might write it more compressed."
+            },
+            {
+                "start_timestamp": 5037.76,
+                "end_timestamp": 5044.76,
+                "text": "But these are what we termed deformations. I can deform each of these strokes slightly differently."
+            },
+            {
+                "start_timestamp": 5044.76,
+                "end_timestamp": 5049.76,
+                "text": "And they can be represented mathematically as warping operations like in a vector field."
+            },
+            {
+                "start_timestamp": 5049.76,
+                "end_timestamp": 5055.76,
+                "text": "In a more technical sense of warping operation applies a smooth deformation field to the pixels of an image."
+            },
+            {
+                "start_timestamp": 5055.76,
+                "end_timestamp": 5061.76,
+                "text": "If you shifting them slightly to create really a new yet similar arrangement, right?"
+            },
+            {
+                "start_timestamp": 5061.76,
+                "end_timestamp": 5067.76,
+                "text": "Still semantically the same, but it's completely new arrangement. It's not just translated or rotated, it's really deform to a vector field."
+            },
+            {
+                "start_timestamp": 5067.76,
+                "end_timestamp": 5072.76,
+                "text": "And it's this small localized shifts that CNNs are particularly good at handling."
+            },
+            {
+                "start_timestamp": 5072.76,
+                "end_timestamp": 5080.76,
+                "text": "This explains why CNNs excel really at tasks like handwriting, digit classification, cats and dogs and all sorts of image classification tasks."
+            },
+            {
+                "start_timestamp": 5080.76,
+                "end_timestamp": 5094.76,
+                "text": "So CNNs are not just invariant to large scale, easily defined transformations like shifts and rotations, but they're particularly good in approximating and approximately invariant to this really subtle and small complex deformations."
+            },
+            {
+                "start_timestamp": 5094.76,
+                "end_timestamp": 5104.76,
+                "text": "And this adaptability really makes CNNs quite powerful tool for why the ray of image recognition task from medical imaging to autonomous driving."
+            },
+            {
+                "start_timestamp": 5104.76,
+                "end_timestamp": 5117.76,
+                "text": "While CNNs were originally designed with translation invariants in mind, the utility really extends far beyond allowing them to capture and generalize well, even in the presence of really, really complex deformations and variants of the features."
+            },
+            {
+                "start_timestamp": 5117.76,
+                "end_timestamp": 5123.76,
+                "text": "This is what we call generalize ability."
+            }
+        ]
+    },
+    {
+        "segment_number": 12,
+        "segment_title": "Flattening Layers in CNNs",
+        "segment_start_timestamp": 5123.76,
+        "segment_end_timestamp": 5242.76,
+        "transcript": [
+            {
+                "start_timestamp": 5123.76,
+                "end_timestamp": 5135.76,
+                "text": "So flattening layers is the last thing we'll discuss for the basic building blocks of a scene and flattening layers just surface connection between convolutional layers and fully connected layers in a convolutional network."
+            },
+            {
+                "start_timestamp": 5135.76,
+                "end_timestamp": 5149.76,
+                "text": "You might still want to have the final kind of lower dimensional space because if I fully connected network, so for that, you need, you need to flatten your input. And this is exactly what the flattening layer does."
+            },
+            {
+                "start_timestamp": 5149.76,
+                "end_timestamp": 5165.76,
+                "text": "So the convolutional pooling layers usually operate on a 3d tensor that or higher dimensional tensor that represents the learned features from the input image fully connected layer expects a 1d tensor of numbers, a 1d vector large one, but a 1d vector."
+            },
+            {
+                "start_timestamp": 5165.76,
+                "end_timestamp": 5181.76,
+                "text": "And the flattening layer just reshapes 3d or nd tensors into 1d tensors. So let's say the output of your final pooling layer in a CNN is a tensor of shape 4x4x64, which means it has height of 4 and with 4 and the depth of 64 features."
+            },
+            {
+                "start_timestamp": 5181.76,
+                "end_timestamp": 5190.76,
+                "text": "The flattening layer will take this 4x4 by 64 tensor and reshape it in a 1d tensor of shape 1x1024 without ordering the actual data."
+            },
+            {
+                "start_timestamp": 5190.76,
+                "end_timestamp": 5198.76,
+                "text": "And the flattening data then can serve as an input to a fully connected layer, also known as dense layers, because here now everything is connected to everything."
+            },
+            {
+                "start_timestamp": 5198.76,
+                "end_timestamp": 5215.76,
+                "text": "And also locality is our two principles, invariance and locality, they don't play such a big role in such abstract space anymore. So you can just connect everything to everything again and make a decision dependent on every single of these abstract inputs."
+            },
+            {
+                "start_timestamp": 5216.76,
+                "end_timestamp": 5227.76,
+                "text": "So the flattening layer doesn't learn any parameters, it only reform reformers the data. But this step is very often crucial for transforming the spatial features into a format that can be fed into standard fully connected layers."
+            },
+            {
+                "start_timestamp": 5228.76,
+                "end_timestamp": 5242.76,
+                "text": "A lot of the networks will discuss examples where action network architectures will use this sort of principle and have in the final bit fully connected layer to make the final code what class, your object actually is."
+            },
+            {
+                "start_timestamp": 5242.76,
+                "end_timestamp": 5258.76,
+                "text": "Now what do CNNs actually learn to have a look at some feature outputs of very early layers, some of these look like with a feature extractors, but not really clear what the features, this seems to be corners, this seems to be round these things."
+            }
+        ]
+    },
+    {
+        "segment_number": 13,
+        "segment_title": "Interpretability of CNN Features",
+        "segment_start_timestamp": 5242.76,
+        "segment_end_timestamp": 5340.76,
+        "transcript": [
+            {
+                "start_timestamp": 5242.76,
+                "end_timestamp": 5258.76,
+                "text": "Now what do CNNs actually learn to have a look at some feature outputs of very early layers, some of these look like with a feature extractors, but not really clear what the features, this seems to be corners, this seems to be round these things."
+            },
+            {
+                "start_timestamp": 5258.76,
+                "end_timestamp": 5281.76,
+                "text": "If you go a little bit further down layer three seems to become more abstract like shapes of paper and like these patterns here, then if you go higher up layer four, this seems to react to things that look like legs and eyes and this is what people try to analyze in the networks, but very often these will just not be interpretable."
+            },
+            {
+                "start_timestamp": 5281.76,
+                "end_timestamp": 5307.76,
+                "text": "The features beyond the certain layer are not kind of straightforward to interpret as you would expect like no is eyes and sometimes you see them very often you don't, but the performance of your classifier is still excellent, which led you live with a certain black box characteristics of these networks explainable machine learning is still a big topic here, but it's because it's difficult to comprehend for us human."
+            },
+            {
+                "start_timestamp": 5307.76,
+                "end_timestamp": 5322.76,
+                "text": "How these high-dimensional projections work don't get me wrong with fully understand what's happening, these are not the magic machines, we exactly know what's happening, it's just very difficult for us to follow the many, many high-dimensional decision paths, a combination of features thus."
+            },
+            {
+                "start_timestamp": 5322.76,
+                "end_timestamp": 5329.76,
+                "text": "So that is an active area of research, how can we make explanations of networks that are comprehensive for humans."
+            },
+            {
+                "start_timestamp": 5330.76,
+                "end_timestamp": 5340.76,
+                "text": "And text is probably a solution, but also certain other kind of feature combinations, which you can talk about in a couple of slides."
+            },
+            {
+                "start_timestamp": 5340.76,
+                "end_timestamp": 5358.76,
+                "text": "Historically, a lot of people say a lot of this has been invented a long, long time ago, maybe the basic overview is that the neocognitron has been explored by Fukushima in the 70s 80s."
+            }
+        ]
+    },
+    {
+        "segment_number": 14,
+        "segment_title": "Historical Context of CNNs",
+        "segment_start_timestamp": 5340.76,
+        "segment_end_timestamp": 5474.76,
+        "transcript": [
+            {
+                "start_timestamp": 5340.76,
+                "end_timestamp": 5358.76,
+                "text": "Historically, a lot of people say a lot of this has been invented a long, long time ago, maybe the basic overview is that the neocognitron has been explored by Fukushima in the 70s 80s."
+            },
+            {
+                "start_timestamp": 5358.76,
+                "end_timestamp": 5367.76,
+                "text": "He didn't have a way to learn them, so this didn't have back propagation yet to learn the way so they were kind of handcrafted, but already had the idea of"
+            },
+            {
+                "start_timestamp": 5367.76,
+                "end_timestamp": 5376.76,
+                "text": "bat sharing and locality and so on and Fukushima X-ray also used something like Arrelu, non linearity, which we'll talk about in the future lecture."
+            },
+            {
+                "start_timestamp": 5377.76,
+                "end_timestamp": 5392.76,
+                "text": "LeCun did a lot of work here in the direction of the conversion networks, image analysis in the 90s, but the program was always there was no super efficient tens of hardware like GPUs around that make really large-scale programs so"
+            },
+            {
+                "start_timestamp": 5392.76,
+                "end_timestamp": 5407.76,
+                "text": "the data LeCun was working with were very, very small kind of 28x28 pixel images that he classified and then really as soon as GPUs became flexible enough to be programmed, the one of the kind of hardest challenges in computer vision was"
+            },
+            {
+                "start_timestamp": 5407.76,
+                "end_timestamp": 5423.76,
+                "text": "very good performance, let's put it that way, very good performance on one of these challenges was shown and then the rise of the learning and GPUs really came in 2012, but it depends how you measure these things."
+            },
+            {
+                "start_timestamp": 5423.76,
+                "end_timestamp": 5440.76,
+                "text": "So GPUs had a big factor, but also a lot of the components have been around for quite a while, and since we have most of these things now together there's a lot of discoveries to make actually about data and statistics and high-dimensional spaces and all of these things, this is very, very exciting."
+            },
+            {
+                "start_timestamp": 5441.76,
+                "end_timestamp": 5457.76,
+                "text": "So I've prepared also in the lecture notes some of these summary slides, so have a look of them, don't learn them by heart please, I'm really the most important part is that you understand and develops an intuition what's actually going on here."
+            },
+            {
+                "start_timestamp": 5457.76,
+                "end_timestamp": 5474.76,
+                "text": "The practical implementation you're learning during the coursework where you see most of this is using pytorch in the right way, but then understanding the individual steps, this is what you learn here in the lectures and interpreting the arrows you'll encounter when you build up your network."
+            },
+            {
+                "start_timestamp": 5474.76,
+                "end_timestamp": 5503.76,
+                "text": "And then what I also hope that you take out of it is to understand how these links to master probability theory and so on where well paper is thinking for a long time since base actually about what it means, how likely a prediction can be made, given a certain input, like a combination of features, so this can be very well described or with probability theory in this context, we'll talk a little bit more about this in the context of later lectures."
+            }
+        ]
+    }
+]
